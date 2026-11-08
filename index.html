@@ -1,0 +1,103 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Giovanni Sanchez · Local Websites</title><meta name="description" content="Websites for local restaurants and shops in Kendall &amp; South Miami: $49 to start, $49/month, unlimited updates.">
+<meta property="og:title" content="Giovanni Sanchez · Local Websites"><meta property="og:description" content="Websites for local restaurants and shops in Kendall &amp; South Miami: $49 to start, $49/month, unlimited updates.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://doctorg1998.github.io/local-websites/"><link rel="canonical" href="https://doctorg1998.github.io/local-websites/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+/* Layout: one calm column of sections; palm green does the work, mango only marks checks and numbers. */
+:root{--bg:#F5F6F1;--surf:#FFFFFF;--text:#14231C;--muted:#55635B;--acc:#0E6A4E;--acc-t:#FFFFFF;--mango:#C97A0C;
+--line:rgba(20,35,28,.13);--soft:#E7EEE7;--display:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;--body:"Figtree",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1813;--surf:#16211B;--text:#E9EFE9;--muted:#A5B3AA;--acc:#5CC79C;--acc-t:#0B1510;--mango:#F2B04A;--line:rgba(233,239,233,.14);--soft:#1C2A22;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1813;--surf:#16211B;--text:#E9EFE9;--muted:#A5B3AA;--acc:#5CC79C;--acc-t:#0B1510;--mango:#F2B04A;--line:rgba(233,239,233,.14);--soft:#1C2A22;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--acc)}a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--mango);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+.logo{font:700 19px var(--display);color:var(--text);text-decoration:none;letter-spacing:-.01em}
+nav{display:flex;gap:18px;font-size:15px;font-weight:500}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--acc)}
+h1,h2,h3{font-family:var(--display);line-height:1.05;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(38px,7.5vw,68px);font-weight:800;margin:12px 0 18px}
+h2{font-size:clamp(26px,4vw,38px);font-weight:700;margin:0 0 18px}
+.eyebrow{color:var(--acc);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.lead{font-size:19px;color:var(--muted);max-width:36em}
+.hero{padding-block:64px 48px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:10px;background:var(--acc);color:var(--acc-t);font:600 16px var(--body);text-decoration:none;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--text);border:1.5px solid var(--muted)}
+section{padding-block:56px;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 6px;font-size:20px}.card p{margin:0;color:var(--muted)}
+.price{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:start}
+.big{font:800 clamp(44px,8vw,64px)/1 var(--display);font-variant-numeric:tabular-nums}.big small{font:500 18px var(--body);color:var(--muted)}
+ul.check{list-style:none;padding:0;margin:0}ul.check li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid var(--line)}
+ul.check li:before{content:"✓";position:absolute;left:4px;color:var(--mango);font-weight:800}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ol.steps li{counter-increment:s;background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:16px 16px 16px 62px;position:relative}
+ol.steps li:before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:8px;background:var(--soft);color:var(--acc);display:grid;place-items:center;font:800 17px var(--display)}
+.sample{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
+.phone{border:10px solid var(--text);border-radius:34px;overflow:hidden;aspect-ratio:9/16;width:100%;max-width:300px;margin:0 auto;background:var(--surf)}
+.phone iframe{width:100%;height:100%;border:0}
+details{border-bottom:1px solid var(--line);padding-block:14px}summary{font-weight:600;cursor:pointer}details p{color:var(--muted);margin:10px 0 0}
+.founding{margin-top:16px;padding:14px 16px;border:1.5px dashed var(--mango);border-radius:12px}
+.contact{background:var(--soft);border-radius:18px;padding:28px}
+.mail{font-weight:700;font-size:clamp(16px,3.6vw,21px);word-break:break-all;user-select:all}
+footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer a{color:var(--muted);margin-right:16px}
+.doc{max-width:760px;padding-block:40px 64px}.doc h1{font-size:clamp(30px,6vw,46px)}.doc h2{font-size:22px;margin-top:32px}
+.doc li{margin:6px 0}
+@media (max-width:720px){nav a.hide{display:none}.price,.sample{grid-template-columns:minmax(0,1fr)}.hero{padding-block:44px 36px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header><div class="wrap"><a class="logo" href="index.html">Giovanni Sanchez</a>
+<nav><a class="hide" href="index.html#how">How it works</a><a href="index.html#pricing">Pricing</a><a href="index.html#contact">Contact</a></nav></div></header>
+<main>
+<div class="wrap hero"><div class="eyebrow">Websites for Kendall &amp; South Miami businesses</div>
+<h1>A website your customers can actually use.</h1>
+<p class="lead">Your menu, hours, location and a one-tap call button, built for phones and kept up to date for you. Made for local restaurants, cafés, bakeries and shops in Kendall and South Miami.</p>
+<div class="btns"><a class="btn" href="#pricing">See the plan</a><a class="btn ghost" href="sample/index.html">View a sample site</a></div></div>
+
+<section id="how"><div class="wrap"><h2>How it works</h2><ol class="steps">
+<li><strong>Free preview first.</strong> I build a preview of your new site before you pay anything.</li>
+<li><strong>Say yes.</strong> Pay the $49 down payment online and send a photo of your menu and a few pictures.</li>
+<li><strong>You look it over and ask for changes.</strong> One round of changes before launch, usually done in 3 business days. After launch, updates are unlimited.</li>
+<li><strong>Go live</strong> on your own web address. Your $49 monthly plan starts only on launch day.</li></ol></div></section>
+
+<section id="pricing"><div class="wrap price"><div><h2>One simple plan</h2>
+<div class="big">$49<small> /month</small></div>
+<p style="color:var(--muted)">plus $49 to start, which covers setup and your web address.</p>
+<div class="founding"><strong>Founding offer for my first 10 clients: $39/month for 12 months, then $49.</strong> In return: an honest Google review and permission to show your site as an example.</div>
+<div class="grid" style="margin-top:22px"><div class="card"><h3>30-day guarantee</h3><p>Not happy within 30 days of launch? I refund your $49 start fee and first month. Only the domain fee (about $12) stays with the domain, which is yours.</p></div>
+<div class="card"><h3>No contract</h3><p>Month to month. Cancel anytime.</p></div></div></div>
+<ul class="check"><li>Custom one-page site for phone, tablet and computer</li><li>Menu or services, hours, map and photos</li>
+<li>Call, directions, WhatsApp and ordering-app buttons</li><li>Your own web address, registered in <strong>your</strong> name</li>
+<li>Hosting and security (https) included</li><li><strong>Unlimited updates</strong>: send a text or email, and I make the change within 2 business days</li>
+<li>A monthly check-in so it never goes stale</li><li>Your domain and content always stay yours</li></ul></div></section>
+
+<section id="sample"><div class="wrap sample"><div><h2>See what it looks like</h2>
+<p class="lead">This is a sample site for a made-up café. Yours uses your real menu, photos and colors.</p>
+<div class="btns"><a class="btn ghost" href="sample/index.html">Open the sample</a></div></div>
+<div class="phone"><iframe src="sample/index.html" title="Sample website on a phone" loading="lazy"></iframe></div></div></section>
+
+<section id="faq"><div class="wrap"><h2>Questions</h2>
+<details><summary>Do I need to know anything technical?</summary><p>No. Send photos and your menu, then text or email any changes. I handle everything else.</p></details>
+<details><summary>What if I already have a website or a domain?</summary><p>I can rebuild it and connect the domain you already own.</p></details>
+<details><summary>Can customers order online?</summary><p>Your site links to the ordering apps you already use, like DoorDash, Uber Eats, Toast, Square or WhatsApp.</p></details>
+<details><summary>What happens if I cancel?</summary><p>Cancel any time by text or email. Your site stays online until the month you paid for ends, and your domain stays yours. I help you move it if you want. See the <a href="refunds.html">refund &amp; cancellation policy</a>.</p></details>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact"><h2>Let's talk</h2>
+<p>I'm local to Kendall and happy to stop by in person. Email me at:</p>
+<p class="mail">giovannisanchez.website@gmail.com</p>
+<button class="btn ghost" type="button" data-copy="giovannisanchez.website@gmail.com">Copy email address</button>
+<p style="color:var(--muted);margin-bottom:0">Giovanni Sanchez</p></div></div></section>
+</main>
+<footer><div class="wrap"><p>Giovanni Sanchez · Websites for Kendall &amp; South Miami businesses · Miami-Dade, Florida</p>
+<p><a href="terms.html">Terms of Service</a><a href="refunds.html">Refunds &amp; cancellation</a><a href="privacy.html">Privacy</a></p></div></footer>
+<script>document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{
+const sel=()=>{const m=document.querySelector('.mail');if(m){const r=document.createRange();r.selectNodeContents(m);const g=getSelection();g.removeAllRanges();g.addRange(r);}b.textContent='Selected: press copy';};
+try{navigator.clipboard.writeText(b.dataset.copy).then(()=>{b.textContent='Copied';setTimeout(()=>{b.textContent='Copy email address';},2000);},sel);}catch(_){sel();}}));</script>
+</body></html>

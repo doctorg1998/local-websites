@@ -1,0 +1,140 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Terms of Service · Giovanni Sanchez</title><meta name="description" content="Terms of Service">
+<meta property="og:title" content="Terms of Service · Giovanni Sanchez"><meta property="og:description" content="Terms of Service">
+<meta property="og:type" content="website"><meta property="og:url" content="https://doctorg1998.github.io/local-websites/terms.html"><link rel="canonical" href="https://doctorg1998.github.io/local-websites/terms.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+/* Layout: one calm column of sections; palm green does the work, mango only marks checks and numbers. */
+:root{--bg:#F5F6F1;--surf:#FFFFFF;--text:#14231C;--muted:#55635B;--acc:#0E6A4E;--acc-t:#FFFFFF;--mango:#C97A0C;
+--line:rgba(20,35,28,.13);--soft:#E7EEE7;--display:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;--body:"Figtree",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1813;--surf:#16211B;--text:#E9EFE9;--muted:#A5B3AA;--acc:#5CC79C;--acc-t:#0B1510;--mango:#F2B04A;--line:rgba(233,239,233,.14);--soft:#1C2A22;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1813;--surf:#16211B;--text:#E9EFE9;--muted:#A5B3AA;--acc:#5CC79C;--acc-t:#0B1510;--mango:#F2B04A;--line:rgba(233,239,233,.14);--soft:#1C2A22;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--acc)}a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--mango);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+.logo{font:700 19px var(--display);color:var(--text);text-decoration:none;letter-spacing:-.01em}
+nav{display:flex;gap:18px;font-size:15px;font-weight:500}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--acc)}
+h1,h2,h3{font-family:var(--display);line-height:1.05;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(38px,7.5vw,68px);font-weight:800;margin:12px 0 18px}
+h2{font-size:clamp(26px,4vw,38px);font-weight:700;margin:0 0 18px}
+.eyebrow{color:var(--acc);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.lead{font-size:19px;color:var(--muted);max-width:36em}
+.hero{padding-block:64px 48px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:10px;background:var(--acc);color:var(--acc-t);font:600 16px var(--body);text-decoration:none;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--text);border:1.5px solid var(--muted)}
+section{padding-block:56px;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 6px;font-size:20px}.card p{margin:0;color:var(--muted)}
+.price{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:start}
+.big{font:800 clamp(44px,8vw,64px)/1 var(--display);font-variant-numeric:tabular-nums}.big small{font:500 18px var(--body);color:var(--muted)}
+ul.check{list-style:none;padding:0;margin:0}ul.check li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid var(--line)}
+ul.check li:before{content:"✓";position:absolute;left:4px;color:var(--mango);font-weight:800}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ol.steps li{counter-increment:s;background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:16px 16px 16px 62px;position:relative}
+ol.steps li:before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:8px;background:var(--soft);color:var(--acc);display:grid;place-items:center;font:800 17px var(--display)}
+.sample{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
+.phone{border:10px solid var(--text);border-radius:34px;overflow:hidden;aspect-ratio:9/16;width:100%;max-width:300px;margin:0 auto;background:var(--surf)}
+.phone iframe{width:100%;height:100%;border:0}
+details{border-bottom:1px solid var(--line);padding-block:14px}summary{font-weight:600;cursor:pointer}details p{color:var(--muted);margin:10px 0 0}
+.founding{margin-top:16px;padding:14px 16px;border:1.5px dashed var(--mango);border-radius:12px}
+.contact{background:var(--soft);border-radius:18px;padding:28px}
+.mail{font-weight:700;font-size:clamp(16px,3.6vw,21px);word-break:break-all;user-select:all}
+footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer a{color:var(--muted);margin-right:16px}
+.doc{max-width:760px;padding-block:40px 64px}.doc h1{font-size:clamp(30px,6vw,46px)}.doc h2{font-size:22px;margin-top:32px}
+.doc li{margin:6px 0}
+@media (max-width:720px){nav a.hide{display:none}.price,.sample{grid-template-columns:minmax(0,1fr)}.hero{padding-block:44px 36px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header><div class="wrap"><a class="logo" href="index.html">Giovanni Sanchez</a>
+<nav><a class="hide" href="index.html#how">How it works</a><a href="index.html#pricing">Pricing</a><a href="index.html#contact">Contact</a></nav></div></header>
+<main class="wrap doc"><h1>Website Services Agreement</h1>
+<p><em>Also the Terms of Service for every purchase from Giovanni Sanchez. Last updated November 08, 2026. </em></p>
+
+<p>This Agreement is between <strong>Giovanni Sanchez</strong>, a sole proprietor in Miami-Dade County, Florida ("<strong>we</strong>", "<strong>us</strong>"), and the business that signs up for a website plan ("<strong>you</strong>", the "<strong>Client</strong>"). You accept this Agreement when you check the terms box at checkout, sign it, or pay any invoice that refers to it.</p>
+
+<h2>1. What you get</h2>
+<p>The <strong>Website Plan</strong> includes:</p>
+<ul>
+<li>A one-page website made for phones, tablets and computers. It can show your menu or services, hours, location and map, contact buttons, photos, and links to your social media and ordering apps.</li>
+<li>Setup: we build the site from the information and photos you give us, and you get one round of changes before launch.</li>
+<li>Hosting for as long as your plan is active, a security certificate (https), and connecting your domain name.</li>
+<li><strong>Unlimited small updates</strong> to menu items, prices, hours, photos, specials and text. We make them within <strong>2 business days</strong> of your request. You can send requests by email or text.</li>
+<li>One check-in per month asking if anything needs updating.</li>
+</ul>
+
+<h2>2. What is not included</h2>
+<p>Unless we agree in writing, the plan does not include: online ordering, booking or payment systems (we can link to the ones you already use); logo or brand design; professional photography; copywriting beyond short descriptions; paid ads, search ranking guarantees, or social media management; multi-page sites; or email accounts. We can quote these separately.</p>
+
+<h2>3. Your responsibilities</h2>
+<ul>
+<li>Give us accurate information (menu, prices, hours, address, allergens) and tell us when it changes. You are responsible for what your site says about your products and prices.</li>
+<li>Only give us photos, logos and text that you own or have permission to use. If someone claims that a photo, logo or text you gave us infringes their rights, you agree to cover the reasonable costs of that claim.</li>
+<li>Name one person who can approve the site and request changes.</li>
+</ul>
+
+<h2>4. Price and payment</h2>
+<ul>
+<li><strong>Down payment: $49</strong>, paid at signup. It covers setup, the first year of your domain name (if you need a new one), and payment processing.</li>
+<li><strong>Monthly plan: $49 per month</strong>. The first monthly charge happens on the day your site launches, and the same day each month after that.</li>
+<li><strong>Founding clients:</strong> our first 10 clients pay <strong>$39 per month for their first 12 months</strong>. After that, the regular $49 monthly price applies, and we will remind them by email at least 30 days before it changes. In return, the founding client agrees to leave an honest Google review and lets us show their site as an example of our work.</li>
+<li>Payments are charged automatically to the card or bank account you give at checkout, through our payment processor (Stripe). We never see or store your full card number.</li>
+<li>Domain renewals after the first year are included in your monthly plan while it is active.</li>
+<li>We will give you at least 30 days' notice by email before changing your monthly price. A founding client's $39 price is guaranteed for their first 12 months.</li>
+</ul>
+
+<h2>5. Late or failed payments</h2>
+<p>If a payment fails, our processor will retry it and email you. If it is still unpaid <strong>14 days</strong> after the due date, we may pause your site (it shows a simple "back soon" page) until the balance is paid. A site unpaid for 60 days may be cancelled under section 7.</p>
+
+<h2>6. 30-day money-back guarantee</h2>
+<p>If you are not happy, ask for a refund within <strong>30 days after your site launches</strong> and we will refund the down payment and your first monthly payment. The only thing not refunded is a domain name already bought for you, which stays registered to you and is yours to keep. After that 30-day window, payments are not refundable. See our <a href="https://doctorg1998.github.io/local-websites/refunds.html">Refund &amp; Cancellation Policy</a>.</p>
+
+<h2>7. Cancelling</h2>
+<ul>
+<li>The plan is <strong>month to month</strong>. There is no long-term contract.</li>
+<li>You can cancel anytime in the billing portal linked in your receipts, or by emailing giovannisanchez.website@gmail.com. Cancellation takes effect at the end of the month you have already paid for, and your site stays online until then. No further charges are made.</li>
+<li>We can end the plan with 30 days' written notice, or right away if you break this Agreement, do not pay for 60 days, or ask us to publish anything illegal, harmful or misleading. If we end the plan without cause, we refund any unused prepaid time.</li>
+</ul>
+
+<h2>8. Who owns what</h2>
+<ul>
+<li><strong>Your domain name is yours.</strong> We register it in your name (or your business name). If you leave, we help you move it at no charge.</li>
+<li><strong>Your content is yours</strong>: your menu, text, photos, logo and business information.</li>
+<li><strong>The website design and code</strong> are owned by us. While your plan is active you have a license to use them for your business. If you cancel, you can buy a full copy of your site files for a one-time fee of <strong>$300</strong> (waived after 12 paid months), and then you may use and host that copy anywhere.</li>
+<li>We show your site in our portfolio only with your permission (founding clients give this permission as part of their discount).</li>
+</ul>
+
+<h2>9. Hosting and availability</h2>
+<p>We host your site with reputable providers and aim to keep it online at all times, but we cannot guarantee it will never be unavailable, slow, or affected by outages at our providers, your domain registrar or the internet. We will fix problems we control as quickly as reasonably possible.</p>
+
+<h2>10. Limits of liability</h2>
+<p>We provide the website "as is". To the extent allowed by law, we are not responsible for lost profits, lost sales or indirect damages, and our total liability for any claim is limited to the amount you paid us in the <strong>3 months</strong> before the claim. Nothing here limits liability that cannot be limited by law.</p>
+
+<h2>11. Communication and privacy</h2>
+<p>You agree that we can contact you by email, text or phone about your website and account. We handle your information as described in our <a href="https://doctorg1998.github.io/local-websites/privacy.html">Privacy Policy</a>.</p>
+
+<h2>12. General</h2>
+<ul>
+<li>This Agreement is governed by the laws of the State of Florida. Any dispute will be handled in the courts of Miami-Dade County, Florida. Before going to court, both sides agree to try to resolve it in good faith by email or in person for 30 days.</li>
+<li>This Agreement, the Refund &amp; Cancellation Policy and the Privacy Policy are the whole agreement between us. We may update these terms with 30 days' notice by email; the new terms apply from your next billing date. If you don't agree, you can cancel before then.</li>
+<li>If part of this Agreement can't be enforced, the rest still applies. Electronic acceptance and electronic signatures are as valid as handwritten ones.</li>
+</ul>
+
+<p><strong>Contact:</strong> Giovanni Sanchez · giovannisanchez.website@gmail.com · https://doctorg1998.github.io/local-websites</p>
+
+<h2>Signature (only when signing on paper)</h2>
+<p>Client business name: ______________________________ &nbsp; Signed by: ______________________________</p>
+<p>Title: ________________ &nbsp; Date: ____________ &nbsp; &nbsp; Giovanni Sanchez: ______________________________ &nbsp; Date: ____________</p>
+</main>
+<footer><div class="wrap"><p>Giovanni Sanchez · Websites for Kendall &amp; South Miami businesses · Miami-Dade, Florida</p>
+<p><a href="terms.html">Terms of Service</a><a href="refunds.html">Refunds &amp; cancellation</a><a href="privacy.html">Privacy</a></p></div></footer>
+<script>document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{
+const sel=()=>{const m=document.querySelector('.mail');if(m){const r=document.createRange();r.selectNodeContents(m);const g=getSelection();g.removeAllRanges();g.addRange(r);}b.textContent='Selected: press copy';};
+try{navigator.clipboard.writeText(b.dataset.copy).then(()=>{b.textContent='Copied';setTimeout(()=>{b.textContent='Copy email address';},2000);},sel);}catch(_){sel();}}));</script>
+</body></html>
