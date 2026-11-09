@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Italian pizza from a yellow school bus in Kendall. 12515 SW 72nd St, Miami, FL 33183">
+<title>Passione Pizza — concept preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF8E1;--surf:#FFFFFF;--text:#1B1B1B;--muted:#5A5245;--acc:#C8102E;--acc-t:#FFFFFF;
+--acc2:#F4C430;--hero-bg:#F4C430;--hero-text:#1B1B1B;--line:rgba(27,27,27,.16);--r:6px;
+--display:"Anton",Impact,"Arial Narrow",sans-serif;--body:"Archivo",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 var(--body)}
+a{color:inherit}a:focus-visible,.btn:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
+.preview{background:#111;color:#f4f4f4;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+header{background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:62px}
+.logo{font:700 21px var(--display);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+nav{display:flex;gap:20px;font-size:15px;font-weight:600}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--text)}
+h1,h2,h3{font-family:var(--display);line-height:1.04;margin:0;text-wrap:balance}
+h1{font-size:clamp(40px,8vw,74px);margin:12px 0 16px}h2{font-size:clamp(28px,4.4vw,40px);margin-bottom:20px}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.hero{background:var(--hero-bg);color:var(--hero-text);padding-block:clamp(48px,9vw,96px)}
+.hero.center{text-align:center}.hero.center .btns{justify-content:center}.hero.center .lead{margin-inline:auto}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+.lead{font-size:clamp(18px,2.4vw,21px);opacity:.88;max-width:34em;margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:var(--r);font-weight:700;text-decoration:none;border:1.5px solid transparent}
+.btn.primary{background:var(--acc);color:var(--acc-t)}
+.btn.ghost{border-color:currentColor;opacity:.92}
+.facts{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;margin:0 auto;padding-block:36px}
+.facts li{padding:16px 18px;font-weight:600}
+section.blk{padding-block:clamp(44px,7vw,72px);border-top:1px solid var(--line)}
+.note{color:var(--muted);margin:0 0 14px}
+.m-leaders,.m-board,.m-cards,.m-pills{list-style:none;padding:0;margin:0 0 18px}
+.m-leaders li{display:flex;align-items:baseline;gap:10px;padding:10px 0;font-size:19px}
+.m-leaders i{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.m-leaders em,.m-board em{font-style:normal;color:var(--muted)}
+.m-board{background:#1E1E1E;color:#F5F0E6;padding:22px 24px;border-radius:10px;border:8px solid #6B4423;font:400 22px/1.5 var(--display);letter-spacing:.03em}
+.m-board li{display:flex;gap:10px;align-items:baseline;text-transform:uppercase}.m-board i{flex:1;border-bottom:2px dashed rgba(245,240,230,.35)}.m-board em{color:#F4C430}
+.m-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px}
+.m-cards li{background:var(--surf);border:1px solid var(--line);padding:22px;font:700 22px var(--display)}
+.m-pills{display:flex;flex-wrap:wrap;gap:10px}.m-pills li{background:var(--surf);border:2px solid var(--acc);color:var(--acc);border-radius:999px;padding:10px 18px;font-weight:700}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.ph{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ph > *{aspect-ratio:3/4;display:grid;place-items:center;font-size:13px;color:var(--muted);background:var(--surf);border:1px dashed var(--line);width:100%;object-fit:cover}
+.ph > img{border:0;display:block;height:auto}.note.small{font-size:12px;margin-top:10px}
+.motif.photo{position:relative}.motif.photo img{width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit}
+.tag{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.6);color:#fff;font:600 11px/1 system-ui,sans-serif;padding:5px 8px;border-radius:4px;letter-spacing:.04em}
+.herophoto{position:relative;margin-top:36px}.herophoto img{width:100%;aspect-ratio:21/9;object-fit:cover;display:block;border:3px solid #1B1B1B;border-radius:10px;box-shadow:6px 6px 0 #1B1B1B}
+.herophoto .tag{left:calc(max(18px,env(safe-area-inset-left,0px)) + 12px);bottom:12px}
+.ph-arch > *{border-radius:999px 999px 12px 12px}.ph-round > *{border-radius:50%;aspect-ratio:1}.ph-blob > *{border-radius:40% 60% 55% 45%/50% 45% 55% 50%;aspect-ratio:1}
+.ph-frame > *{outline:1px solid var(--line);outline-offset:6px}.ph-square > *{aspect-ratio:1}
+.extra{margin-top:24px;padding:18px 20px;background:var(--surf);border:1px solid var(--line)}.extra h3{font-size:22px;margin-bottom:6px}.extra p{margin:0;color:var(--muted)}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line)}th{width:44%}
+iframe{width:100%;height:280px;border:0;margin-top:16px;border-radius:min(var(--r),16px)}
+footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){nav{display:none}.hgrid,.cols{grid-template-columns:minmax(0,1fr)}.hero .motif{max-width:240px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.hero{border-bottom:14px solid transparent;border-image:repeating-conic-gradient(#1B1B1B 0 25%,#FFF8E1 0 50%) 0 0 100%/0 0 14px/0 0 0 repeat}
+.hero h1{text-transform:uppercase;letter-spacing:.02em;font-weight:400;font-size:clamp(46px,11vw,96px);line-height:.95}
+.hero .eyebrow{background:var(--acc);color:#fff;display:inline-block;padding:4px 10px;transform:rotate(-2deg)}
+h2{text-transform:uppercase;font-weight:400;letter-spacing:.02em}
+.btn{text-transform:uppercase;font-weight:800}
+.btn.primary{background:var(--acc);color:#fff}
+.facts li{background:var(--surf);border:2px solid var(--text);box-shadow:4px 4px 0 var(--text)}
+
+</style></head><body>
+<div class="preview">Concept preview made by Giovanni Sanchez — not the official website of Passione Pizza.</div>
+<header><div class="wrap"><a class="logo" href="#">Passione Pizza</a>
+<nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav></div></header>
+<main>
+<section class="hero center"><div class="wrap"><div class="inner"><div class="eyebrow">Italian pizza truck</div><h1>Passione Pizza</h1><p class="lead">Italian pizza from a yellow school bus in Kendall.</p><div class="btns"><a class="btn primary" href="tel:+17866949200">Call +1 786-694-9200</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Passione Pizza 12515 SW 72nd St, Miami, FL 33183">Get directions</a><a class="btn ghost" href="https://www.clover.com/online-ordering/passione-pizza-miami">Order on Clover</a></div></div></div><div class="wrap herophoto"><img src="../../assets/photos/photo-1579751626657-72bc17010498.jpg" alt="Sample food photo"><span class="tag">Sample photo</span></div></section>
+<ul class="facts wrap"><li>Pizza from a converted school bus</li><li>Outdoor seating</li><li>Open evenings, closed Mon and Wed</li></ul>
+<section class="blk" id="menu"><div class="wrap"><h2>Menu</h2><p class="note">Customer favorites, from public reviews and articles:</p><ul class="m-board"><li><span>Cheese pizza</span><i></i><em>$ —</em></li><li><span>Marinara pizza</span><i></i><em>$ —</em></li></ul><p class="note">Full menu with prices goes here. Send a photo of your menu and it is added, and updating it later takes one text message.</p></div></section>
+<section class="blk" id="about"><div class="wrap cols"><div><h2>About</h2><p>Passione Pizza serves Italian-style pizza from a converted yellow school bus on SW 72nd Street, just before 127th Avenue, with outdoor seating. Regulars mention the fresh ingredients, the crust and the fair prices.</p></div><div><div class="ph ph-round"><img src="../../assets/photos/photo-1621538997517-58ce53933faa.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1651978595416-9956a5fb8f7a.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1724734333243-17c38ef0cdfd.jpg" alt="Sample food photo" loading="lazy"></div><p class="note small">Sample photos from Unsplash. Your own photos replace these.</p></div></div></section>
+<section class="blk" id="visit"><div class="wrap cols"><div><h2>Hours</h2><table><tr><th>Sun</th><td>4 PM – 10:30 PM</td></tr><tr><th>Mon</th><td>Closed</td></tr><tr><th>Tue</th><td>4:30 PM – 9:30 PM</td></tr><tr><th>Wed</th><td>Closed</td></tr><tr><th>Thu</th><td>5 PM – 10 PM</td></tr><tr><th>Fri</th><td>4 PM – 10:30 PM</td></tr><tr><th>Sat</th><td>4 PM – 11 PM</td></tr></table></div>
+<div><h2>Visit</h2><p style="margin:0">12515 SW 72nd St, Miami, FL 33183</p><iframe title="Map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.40123340000001,25.699131599999998,-80.3932334,25.7041316&layer=mapnik&marker=25.7016316,-80.3972334"></iframe></div></div></section>
+</main>
+<footer><div class="wrap">Passione Pizza · Concept preview by Giovanni Sanchez</div></footer>
+</body></html>
