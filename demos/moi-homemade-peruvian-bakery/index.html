@@ -4,57 +4,78 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Moi Homemade Peruvian Bakery — concept preview</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600;1,700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#FBF6EF;--surf:#FFFFFF;--text:#2B1D14;--muted:#6E5A4B;--acc:#B5452B;--acc-t:#FFFFFF;--line:color-mix(in srgb,var(--text) 12%,transparent)}
+:root{--bg:#FBF4F2;--surf:#FFFFFF;--text:#4A2E2A;--muted:#7D6460;--acc:#4A2E2A;--acc-t:#FBF4F2;
+--acc2:#C9787F;--hero-bg:#FBF4F2;--hero-text:#4A2E2A;--line:rgba(74,46,42,.15);--r:999px;
+--display:"Cormorant Garamond",Garamond,serif;--body:"Karla",system-ui,sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,sans-serif}
-a{color:inherit}
-.preview{background:var(--text);color:var(--bg);font-size:13px;text-align:center;padding:8px 16px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
-.logo{font:700 20px Fraunces,Georgia,serif;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-nav{display:flex;gap:18px;font-weight:500;font-size:15px}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--acc)}
-.hero{padding:72px 0 56px}
-.eyebrow{color:var(--acc);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
-h1{font:700 clamp(40px,8vw,72px)/1.02 Fraunces,Georgia,serif;margin:10px 0 16px;letter-spacing:-.02em}
-h2{font:600 clamp(28px,4vw,38px)/1.1 Fraunces,Georgia,serif;margin:0 0 20px}
-.lead{font-size:19px;color:var(--muted);max-width:560px;margin:0 0 28px}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;background:var(--acc);color:var(--acc-t);font-weight:600;text-decoration:none}
-.btn.ghost{background:transparent;color:var(--text);border:1.5px solid var(--line)}
-.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-top:44px}
-.gallery img,.gallery.ph div{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px}
-.gallery.ph div{display:grid;place-items:center;background:color-mix(in srgb,var(--acc) 10%,var(--surf));color:var(--muted);font-size:14px;border:1px dashed var(--line)}
-section{padding:56px 0;border-top:1px solid var(--line)}
-.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
-.card{background:var(--surf);border:1px solid var(--line);border-radius:20px;padding:28px}
-.placeholder{border:1.5px dashed var(--line);border-radius:16px;padding:24px;color:var(--muted);background:var(--surf)}
-.placeholder strong{color:var(--text)}
-.menu{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0 32px}
-.menu li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
-.menu span{display:block;color:var(--muted);font-size:14px}.menu em{font-style:normal;font-weight:600;color:var(--acc)}
-table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line)}th{font-weight:600;width:42%}
-iframe{width:100%;height:280px;border:0;border-radius:16px;margin-top:16px}
-footer{padding:32px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
-@media (max-width:720px){nav{display:none}.cols{grid-template-columns:minmax(0,1fr)}.hero{padding:48px 0 40px}
-.gallery{grid-template-columns:1fr 1fr}.gallery>:first-child{grid-column:1/-1}}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 var(--body)}
+a{color:inherit}a:focus-visible,.btn:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
+.preview{background:#111;color:#f4f4f4;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+header{background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:62px}
+.logo{font:700 21px var(--display);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+nav{display:flex;gap:20px;font-size:15px;font-weight:600}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--text)}
+h1,h2,h3{font-family:var(--display);line-height:1.04;margin:0;text-wrap:balance}
+h1{font-size:clamp(40px,8vw,74px);margin:12px 0 16px}h2{font-size:clamp(28px,4.4vw,40px);margin-bottom:20px}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.hero{background:var(--hero-bg);color:var(--hero-text);padding-block:clamp(48px,9vw,96px)}
+.hero.center{text-align:center}.hero.center .btns{justify-content:center}.hero.center .lead{margin-inline:auto}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+.lead{font-size:clamp(18px,2.4vw,21px);opacity:.88;max-width:34em;margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:var(--r);font-weight:700;text-decoration:none;border:1.5px solid transparent}
+.btn.primary{background:var(--acc);color:var(--acc-t)}
+.btn.ghost{border-color:currentColor;opacity:.92}
+.facts{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;margin:0 auto;padding-block:36px}
+.facts li{padding:16px 18px;font-weight:600}
+section.blk{padding-block:clamp(44px,7vw,72px);border-top:1px solid var(--line)}
+.note{color:var(--muted);margin:0 0 14px}
+.m-leaders,.m-board,.m-cards,.m-pills{list-style:none;padding:0;margin:0 0 18px}
+.m-leaders li{display:flex;align-items:baseline;gap:10px;padding:10px 0;font-size:19px}
+.m-leaders i{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.m-leaders em,.m-board em{font-style:normal;color:var(--muted)}
+.m-board{background:#1E1E1E;color:#F5F0E6;padding:22px 24px;border-radius:10px;border:8px solid #6B4423;font:400 22px/1.5 var(--display);letter-spacing:.03em}
+.m-board li{display:flex;gap:10px;align-items:baseline;text-transform:uppercase}.m-board i{flex:1;border-bottom:2px dashed rgba(245,240,230,.35)}.m-board em{color:#F4C430}
+.m-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px}
+.m-cards li{background:var(--surf);border:1px solid var(--line);padding:22px;font:700 22px var(--display)}
+.m-pills{display:flex;flex-wrap:wrap;gap:10px}.m-pills li{background:var(--surf);border:2px solid var(--acc);color:var(--acc);border-radius:999px;padding:10px 18px;font-weight:700}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.ph{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ph div{aspect-ratio:3/4;display:grid;place-items:center;font-size:13px;color:var(--muted);background:var(--surf);border:1px dashed var(--line)}
+.ph-arch div{border-radius:999px 999px 12px 12px}.ph-round div{border-radius:50%;aspect-ratio:1}.ph-blob div{border-radius:40% 60% 55% 45%/50% 45% 55% 50%;aspect-ratio:1}
+.ph-frame div{outline:1px solid var(--line);outline-offset:6px}.ph-square div{aspect-ratio:1}
+.extra{margin-top:24px;padding:18px 20px;background:var(--surf);border:1px solid var(--line)}.extra h3{font-size:22px;margin-bottom:6px}.extra p{margin:0;color:var(--muted)}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line)}th{width:44%}
+iframe{width:100%;height:280px;border:0;margin-top:16px;border-radius:min(var(--r),16px)}
+footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){nav{display:none}.hgrid,.cols{grid-template-columns:minmax(0,1fr)}.hero .motif{max-width:240px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.hero h1{font-style:italic;font-weight:700;font-size:clamp(44px,8vw,80px)}
+.hero .motif{aspect-ratio:3/4;max-width:300px;width:100%;margin-inline:auto;border-radius:999px 999px 18px 18px;
+ background:radial-gradient(circle at 50% 38%,#F3D5D3 0 22%,transparent 23%),linear-gradient(180deg,#F7E3E0,#EBC3C0);border:1px solid var(--line);
+ display:grid;place-items:end center;padding-bottom:22px}
+.hero .motif::after{content:attr(data-label);font:italic 600 18px var(--display);color:var(--muted)}
+h2{font-style:italic;font-weight:700;font-size:clamp(32px,5vw,44px)}
+.eyebrow{color:var(--acc2);letter-spacing:.24em}
+.btn{border-radius:999px}
+.btn.primary{background:var(--acc2);color:#fff}
+.facts li{text-align:center;border-bottom:1px solid var(--acc2)}
+
 </style></head><body>
 <div class="preview">Concept preview made by Giovanni Sanchez — not the official website of Moi Homemade Peruvian Bakery.</div>
 <header><div class="wrap"><a class="logo" href="#">Moi Homemade Peruvian Bakery</a>
-<nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Hours &amp; location</a></nav></div></header>
-<main class="wrap">
-<div class="hero"><div class="eyebrow">Peruvian bakery</div><h1>Moi Homemade Peruvian Bakery</h1>
-<p class="lead">Homemade Peruvian pavlovas, sanguchitos and desserts in South Miami.</p>
-<div class="btns"><a class="btn" href="tel:+13054567485">Call +1 305-456-7485</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Moi Homemade Peruvian Bakery 7388 Southwest 57th Avenue South Miami">Get directions</a><a class="btn ghost" href="https://wa.me/13054567485">Order on WhatsApp</a></div>
-<div class="gallery ph"><div>Photo</div><div>Photo</div><div>Photo</div></div></div>
-<section id="menu"><h2>Menu</h2><div class="placeholder"><strong>Your menu goes here.</strong> Send a photo of your menu and it will be added: sections, prices, and photos of your best sellers. Updating it later takes one text message.</div></section>
-<section id="about"><div class="cols"><div><h2>About us</h2><p>Moi is a family bakery run by sisters Yazmin and Paola Cubas, known around South Miami for its pavlovas and Peruvian-style sanguchitos.</p></div>
-<div class="card"><h2 style="font-size:24px">Find us online</h2><div class="btns" style="margin-top:12px"><a class="btn ghost" href="https://wa.me/13054567485">Order on WhatsApp</a></div></div></div></section>
-<section id="visit"><div class="cols"><div><h2>Hours</h2><table><tr><td colspan="2">Your hours go here. I confirm them with you before launch.</td></tr></table></div>
-<div><h2>Visit</h2><p style="margin:0">7388 Southwest 57th Avenue South Miami</p>
-<iframe title="Map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.28961600000001,25.7003253,-80.281616,25.705325300000002&layer=mapnik&marker=25.7028253,-80.285616"></iframe></div></div></section>
+<nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav></div></header>
+<main>
+<section class="hero split"><div class="wrap hgrid"><div><div class="eyebrow">Peruvian bakery</div><h1>Moi Homemade Peruvian Bakery</h1><p class="lead">Homemade Peruvian pavlovas, sanguchitos and desserts in South Miami.</p><div class="btns"><a class="btn primary" href="tel:+13054567485">Call +1 305-456-7485</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Moi Homemade Peruvian Bakery 7388 Southwest 57th Avenue South Miami">Get directions</a><a class="btn ghost" href="https://wa.me/13054567485">Order on WhatsApp</a></div></div><div class="motif" aria-hidden="true" data-label="Your pavlova photo here"></div></div></section>
+<ul class="facts wrap"><li>Famous for pavlovas</li><li>Peruvian sanguchitos</li><li>Order on WhatsApp</li></ul>
+<section class="blk" id="menu"><div class="wrap"><h2>Menu</h2><p class="note">Customer favorites, from public reviews and articles:</p><ul class="m-cards"><li>Pavlovas</li><li>Sanguchitos</li><li>Peruvian desserts</li></ul><p class="note">Full menu with prices goes here. Send a photo of your menu and it is added, and updating it later takes one text message.</p></div></section>
+<section class="blk" id="about"><div class="wrap cols"><div><h2>About</h2><p>Moi is a family bakery run by sisters Yazmin and Paola Cubas, known around South Miami for its pavlovas and Peruvian-style sanguchitos.</p></div><div class="ph ph-arch"><div>Your photo</div><div>Your photo</div><div>Your photo</div></div></div></section>
+<section class="blk" id="visit"><div class="wrap cols"><div><h2>Hours</h2><table><tr><td colspan="2">Your hours go here. I confirm them with you before launch.</td></tr></table></div>
+<div><h2>Visit</h2><p style="margin:0">7388 Southwest 57th Avenue South Miami</p><iframe title="Map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.28961600000001,25.7003253,-80.281616,25.705325300000002&layer=mapnik&marker=25.7028253,-80.285616"></iframe></div></div></section>
 </main>
-<footer><div class="wrap">© 2026 Moi Homemade Peruvian Bakery · Preview by Giovanni Sanchez</div></footer>
+<footer><div class="wrap">Moi Homemade Peruvian Bakery · Concept preview by Giovanni Sanchez</div></footer>
 </body></html>
