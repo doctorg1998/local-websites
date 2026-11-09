@@ -2,11 +2,12 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Organic cold-pressed juices, smoothies and açaí bowls. 9804 Southwest 77th Avenue Miami">
 <title>Raw South Juice Co. — concept preview</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F3FBF2;--surf:#FFFFFF;--text:#10301E;--muted:#4D6B58;--acc:#1F8A4C;--acc-t:#FFFFFF;
+:root{--bg:#F3FBF2;--surf:#FFFFFF;--text:#10301E;--muted:#4D6B58;--acc:#1A7A43;--acc-t:#FFFFFF;
 --acc2:#FFB238;--hero-bg:#F3FBF2;--hero-text:#10301E;--line:rgba(16,48,30,.13);--r:22px;
 --display:"Fredoka",system-ui,sans-serif;--body:"Nunito Sans",system-ui,sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
@@ -57,6 +58,15 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 0;b
 iframe{width:100%;height:280px;border:0;margin-top:16px;border-radius:min(var(--r),16px)}
 footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
 @media (max-width:760px){nav{display:none}.hgrid,.cols{grid-template-columns:minmax(0,1fr)}.hero .motif{max-width:240px}}
+.skip{position:absolute;left:-999px;top:8px;background:var(--acc);color:var(--acc-t);padding:10px 14px;z-index:20;border-radius:6px}.skip:focus{left:12px}
+.opennow{display:inline-block;margin:16px 0 0;padding:6px 12px;border-radius:999px;font:700 14px/1.2 var(--body);background:rgba(0,0,0,.55);color:#fff}
+.opennow.open::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:#3DDC84;margin-right:8px}
+.actbar{display:none}
+@media (max-width:760px){body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+.actbar{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--acc);
+padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+.actbar a{color:var(--acc-t);text-align:center;font-weight:700;text-decoration:none;min-height:56px;display:grid;place-items:center;border-left:1px solid rgba(255,255,255,.18)}
+.actbar a:first-child{border-left:0}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .hero .motif{position:relative;aspect-ratio:1;max-width:340px;width:100%;margin-inline:auto}
@@ -72,16 +82,35 @@ footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px 
 .hero .motif.photo .tag{left:18%;bottom:18%}
 
 </style></head><body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="preview">Concept preview made by Giovanni Sanchez — not the official website of Raw South Juice Co.</div>
 <header><div class="wrap"><a class="logo" href="#">Raw South Juice Co.</a>
 <nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav></div></header>
-<main>
+<main id="main">
 <section class="hero split"><div class="wrap hgrid"><div><div class="eyebrow">Juice bar</div><h1>Raw South Juice Co.</h1><p class="lead">Organic cold-pressed juices, smoothies and açaí bowls.</p><div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Raw South Juice Co. 9804 Southwest 77th Avenue Miami">Get directions</a></div></div><div class="motif photo"><i></i><i></i><i></i><img src="../../assets/photos/photo-1627308594190-a057cd4bfac8.jpg" alt="Sample food photo"><span class="tag">Sample photo</span></div></div></section>
-<ul class="facts wrap"><li>Organic raw juices</li><li>Smoothies made fresh</li><li>Açaí bowls</li></ul>
+<ul class="facts wrap"><li>Organic raw juices</li><li>Rated about 4.9 stars by customers</li><li>Açaí bowls</li></ul>
 <section class="blk" id="menu"><div class="wrap"><h2>Menu</h2><p class="note">Customer favorites, from public reviews and articles:</p><ul class="m-pills"><li>Cold-pressed juices</li><li>Smoothies</li><li>Açaí bowls</li></ul><p class="note">Full menu with prices goes here. Send a photo of your menu and it is added, and updating it later takes one text message.</p></div></section>
 <section class="blk" id="about"><div class="wrap cols"><div><h2>About</h2><p>Raw South Juice Co. is a juice and smoothie bar on SW 77th Avenue in Kendall, serving organic raw juices, smoothies and açaí bowls.</p></div><div><div class="ph ph-blob"><img src="../../assets/photos/photo-1610970881699-44a5587cabec.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1759006249055-8c4030a2d56a.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1684403620650-81dc661a69db.jpg" alt="Sample food photo" loading="lazy"></div><p class="note small">Sample photos from Unsplash. Your own photos replace these.</p></div></div></section>
 <section class="blk" id="visit"><div class="wrap cols"><div><h2>Hours</h2><table><tr><td colspan="2">Your hours go here. I confirm them with you before launch.</td></tr></table></div>
-<div><h2>Visit</h2><p style="margin:0">9804 Southwest 77th Avenue Miami</p><iframe title="Map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.3225982,25.676779399999997,-80.31459819999999,25.6817794&layer=mapnik&marker=25.6792794,-80.3185982"></iframe></div></div></section>
+<div><h2>Visit</h2><p style="margin:0">9804 Southwest 77th Avenue Miami</p><iframe title="Map showing Raw South Juice Co." loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.3225982,25.676779399999997,-80.31459819999999,25.6817794&layer=mapnik&marker=25.6792794,-80.3185982"></iframe></div></div></section>
 </main>
 <footer><div class="wrap">Raw South Juice Co. · Concept preview by Giovanni Sanchez</div></footer>
+<nav class="actbar" aria-label="Quick actions"><a href="https://www.google.com/maps/search/?api=1&query=Raw South Juice Co. 9804 Southwest 77th Avenue Miami">Directions</a></nav>
+<script>
+(function(){
+var D=["Su","Mo","Tu","We","Th","Fr","Sa"],N=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+function days(t){var o=[];t.split(",").forEach(function(p){var r=p.split("-"),a=D.indexOf(r[0]),b=D.indexOf(r[1]||r[0]);if(a<0||b<0)return;for(var i=a;;i=(i+1)%7){o.push(i);if(i===b)break;}});return o;}
+function parse(h){var w=[[],[],[],[],[],[],[]];h.split(";").forEach(function(r){r=r.trim();var m=r.match(/^([A-Za-z,\-]+)\s+(.+)$/);if(!m||m[2]==="off")return;
+days(m[1]).forEach(function(d){m[2].split(",").forEach(function(t){var x=t.match(/(\d+):(\d+)-(\d+):(\d+)/);if(!x)return;var s=+x[1]*60+ +x[2],e=+x[3]*60+ +x[4];if(e<=s)e+=1440;w[d].push([s,e]);});});});return w;}
+function fmt(m){m%=1440;var h=Math.floor(m/60),mi=m%60,ap=h<12?"AM":"PM";h=h%12||12;return h+(mi?":"+("0"+mi).slice(-2):"")+" "+ap;}
+document.querySelectorAll(".opennow").forEach(function(el){try{
+var w=parse(el.getAttribute("data-hours")),f=new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date()),g={};
+f.forEach(function(p){g[p.type]=p.value;});var d=N.indexOf(g.weekday),now=(+g.hour%24)*60+ +g.minute,open=null;
+w[d].forEach(function(r){if(now>=r[0]&&now<r[1])open=r;});w[(d+6)%7].forEach(function(r){if(r[1]>1440&&now<r[1]-1440)open=[0,r[1]-1440];});
+if(open){el.textContent="Open now · until "+fmt(open[1]);el.className="opennow open";}
+else{var nx="";for(var k=0;k<8&&!nx;k++){var dd=(d+k)%7;w[dd].slice().sort(function(a,b){return a[0]-b[0];}).forEach(function(r){if(!nx&&(k>0||r[0]>now))nx=(k===0?"today":k===1?"tomorrow":N[dd])+" at "+fmt(r[0]);});}
+el.textContent="Closed now"+(nx?" · opens "+nx:"");}
+el.hidden=false;}catch(x){}});
+})();
+</script>
 </body></html>

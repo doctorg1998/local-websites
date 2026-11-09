@@ -58,6 +58,15 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 0;b
 iframe{width:100%;height:280px;border:0;margin-top:16px;border-radius:min(var(--r),16px)}
 footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
 @media (max-width:760px){nav{display:none}.hgrid,.cols{grid-template-columns:minmax(0,1fr)}.hero .motif{max-width:240px}}
+.skip{position:absolute;left:-999px;top:8px;background:var(--acc);color:var(--acc-t);padding:10px 14px;z-index:20;border-radius:6px}.skip:focus{left:12px}
+.opennow{display:inline-block;margin:16px 0 0;padding:6px 12px;border-radius:999px;font:700 14px/1.2 var(--body);background:rgba(0,0,0,.55);color:#fff}
+.opennow.open::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:#3DDC84;margin-right:8px}
+.actbar{display:none}
+@media (max-width:760px){body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+.actbar{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--acc);
+padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+.actbar a{color:var(--acc-t);text-align:center;font-weight:700;text-decoration:none;min-height:56px;display:grid;place-items:center;border-left:1px solid rgba(255,255,255,.18)}
+.actbar a:first-child{border-left:0}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .hero{background:radial-gradient(circle at 20% 120%,rgba(184,137,59,.18) 0 30%,transparent 31%),var(--hero-bg)}
@@ -70,16 +79,35 @@ footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px 
 .hero .btn.ghost{color:var(--hero-text);border-color:rgba(242,245,247,.45)}
 
 </style></head><body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="preview">Concept preview made by Giovanni Sanchez — not the official website of Gyros 305.</div>
 <header><div class="wrap"><a class="logo" href="#">Gyros 305</a>
 <nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav></div></header>
-<main>
+<main id="main">
 <section class="hero center" style="background:linear-gradient(rgba(15,42,68,.70),rgba(15,42,68,.70)),url(../../assets/photos/photo-1773620494884-940e0db95e46.jpg) center/cover no-repeat"><div class="wrap"><div class="inner"><div class="eyebrow">Greek food truck</div><h1>Gyros 305</h1><p class="lead">Lamb and chicken gyros in West Kendall.</p><div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Gyros 305 12750 SW 128th St, Miami, FL 33186">Get directions</a></div></div></div></section><svg class="wave" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 30 C200 0 400 60 600 30 S1000 0 1200 30 V48 H0Z"/></svg>
 <ul class="facts wrap"><li>Lamb and chicken gyros</li><li>Outdoor seating</li><li>Known for keeping its hours</li></ul>
 <section class="blk" id="menu"><div class="wrap"><h2>Menu</h2><p class="note">Customer favorites, from public reviews and articles:</p><ul class="m-leaders"><li><span>Lamb gyro</span><i></i><em>$ —</em></li><li><span>Chicken gyro</span><i></i><em>$ —</em></li><li><span>Fries</span><i></i><em>$ —</em></li></ul><p class="note">Full menu with prices goes here. Send a photo of your menu and it is added, and updating it later takes one text message.</p></div></section>
 <section class="blk" id="about"><div class="wrap cols"><div><h2>About</h2><p>Gyros 305 is a gyro truck on SW 128th Street with outdoor seating that gets busy on weekend evenings. Reviewers praise the lamb and chicken gyros and say the truck keeps to its posted hours.</p></div><div><div class="ph ph-frame"><img src="../../assets/photos/photo-1734974121561-11aee7d3cebd.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1752095809096-f09d22c466c5.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1638865326802-e5ca82e037f3.jpg" alt="Sample food photo" loading="lazy"></div><p class="note small">Sample photos from Unsplash. Your own photos replace these.</p></div></div></section>
 <section class="blk" id="visit"><div class="wrap cols"><div><h2>Hours</h2><table><tr><td colspan="2">Your hours go here. I confirm them with you before launch.</td></tr></table></div>
-<div><h2>Visit</h2><p style="margin:0">12750 SW 128th St, Miami, FL 33186</p><iframe title="Map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.4044392,25.645843799999998,-80.39643919999999,25.6508438&layer=mapnik&marker=25.6483438,-80.4004392"></iframe></div></div></section>
+<div><h2>Visit</h2><p style="margin:0">12750 SW 128th St, Miami, FL 33186</p><iframe title="Map showing Gyros 305" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.4044392,25.645843799999998,-80.39643919999999,25.6508438&layer=mapnik&marker=25.6483438,-80.4004392"></iframe></div></div></section>
 </main>
 <footer><div class="wrap">Gyros 305 · Concept preview by Giovanni Sanchez</div></footer>
+<nav class="actbar" aria-label="Quick actions"><a href="https://www.google.com/maps/search/?api=1&query=Gyros 305 12750 SW 128th St, Miami, FL 33186">Directions</a></nav>
+<script>
+(function(){
+var D=["Su","Mo","Tu","We","Th","Fr","Sa"],N=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+function days(t){var o=[];t.split(",").forEach(function(p){var r=p.split("-"),a=D.indexOf(r[0]),b=D.indexOf(r[1]||r[0]);if(a<0||b<0)return;for(var i=a;;i=(i+1)%7){o.push(i);if(i===b)break;}});return o;}
+function parse(h){var w=[[],[],[],[],[],[],[]];h.split(";").forEach(function(r){r=r.trim();var m=r.match(/^([A-Za-z,\-]+)\s+(.+)$/);if(!m||m[2]==="off")return;
+days(m[1]).forEach(function(d){m[2].split(",").forEach(function(t){var x=t.match(/(\d+):(\d+)-(\d+):(\d+)/);if(!x)return;var s=+x[1]*60+ +x[2],e=+x[3]*60+ +x[4];if(e<=s)e+=1440;w[d].push([s,e]);});});});return w;}
+function fmt(m){m%=1440;var h=Math.floor(m/60),mi=m%60,ap=h<12?"AM":"PM";h=h%12||12;return h+(mi?":"+("0"+mi).slice(-2):"")+" "+ap;}
+document.querySelectorAll(".opennow").forEach(function(el){try{
+var w=parse(el.getAttribute("data-hours")),f=new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date()),g={};
+f.forEach(function(p){g[p.type]=p.value;});var d=N.indexOf(g.weekday),now=(+g.hour%24)*60+ +g.minute,open=null;
+w[d].forEach(function(r){if(now>=r[0]&&now<r[1])open=r;});w[(d+6)%7].forEach(function(r){if(r[1]>1440&&now<r[1]-1440)open=[0,r[1]-1440];});
+if(open){el.textContent="Open now · until "+fmt(open[1]);el.className="opennow open";}
+else{var nx="";for(var k=0;k<8&&!nx;k++){var dd=(d+k)%7;w[dd].slice().sort(function(a,b){return a[0]-b[0];}).forEach(function(r){if(!nx&&(k>0||r[0]>now))nx=(k===0?"today":k===1?"tomorrow":N[dd])+" at "+fmt(r[0]);});}
+el.textContent="Closed now"+(nx?" · opens "+nx:"");}
+el.hidden=false;}catch(x){}});
+})();
+</script>
 </body></html>

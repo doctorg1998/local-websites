@@ -2,6 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Sushi, hibachi and a raw bar, all you can eat, on Sunset Drive. 8800 Southwest 72nd Street Miami">
 <title>Shinju Japanese Buffet — concept preview</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,800&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
@@ -57,6 +58,15 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 0;b
 iframe{width:100%;height:280px;border:0;margin-top:16px;border-radius:min(var(--r),16px)}
 footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
 @media (max-width:760px){nav{display:none}.hgrid,.cols{grid-template-columns:minmax(0,1fr)}.hero .motif{max-width:240px}}
+.skip{position:absolute;left:-999px;top:8px;background:var(--acc);color:var(--acc-t);padding:10px 14px;z-index:20;border-radius:6px}.skip:focus{left:12px}
+.opennow{display:inline-block;margin:16px 0 0;padding:6px 12px;border-radius:999px;font:700 14px/1.2 var(--body);background:rgba(0,0,0,.55);color:#fff}
+.opennow.open::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:#3DDC84;margin-right:8px}
+.actbar{display:none}
+@media (max-width:760px){body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+.actbar{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--acc);
+padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+.actbar a{color:var(--acc-t);text-align:center;font-weight:700;text-decoration:none;min-height:56px;display:grid;place-items:center;border-left:1px solid rgba(255,255,255,.18)}
+.actbar a:first-child{border-left:0}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .hero{background:
@@ -71,16 +81,35 @@ footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px 
 h2{color:var(--acc);font-weight:600}
 
 </style></head><body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="preview">Concept preview made by Giovanni Sanchez — not the official website of Shinju Japanese Buffet.</div>
 <header><div class="wrap"><a class="logo" href="#">Shinju Japanese Buffet</a>
 <nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav></div></header>
-<main>
+<main id="main">
 <section class="hero center" style="background:linear-gradient(rgba(14,18,32,.70),rgba(14,18,32,.70)),url(../../assets/photos/photo-1553621042-f6e147245754.jpg) center/cover no-repeat"><div class="wrap"><div class="inner"><div class="eyebrow">Japanese buffet</div><h1>Shinju Japanese Buffet</h1><p class="lead">Sushi, hibachi and a raw bar, all you can eat, on Sunset Drive.</p><div class="btns"><a class="btn primary" href="tel:+13052758801">Call +1 305-275-8801</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Shinju Japanese Buffet 8800 Southwest 72nd Street Miami">Get directions</a></div></div></div></section>
 <ul class="facts wrap"><li>Sushi</li><li>Hibachi</li><li>Raw bar</li></ul>
 <section class="blk" id="menu"><div class="wrap"><h2>Menu</h2><p class="note">Customer favorites, from public reviews and articles:</p><ul class="m-leaders"><li><span>Sushi</span><i></i><em>$ —</em></li><li><span>Hibachi</span><i></i><em>$ —</em></li><li><span>Raw bar</span><i></i><em>$ —</em></li></ul><p class="note">Full menu with prices goes here. Send a photo of your menu and it is added, and updating it later takes one text message.</p></div></section>
 <section class="blk" id="about"><div class="wrap cols"><div><h2>About</h2><p>Shinju Japanese Buffet on SW 72nd Street serves an all-you-can-eat spread of sushi, hibachi-style dishes and a raw bar, for lunch and dinner.</p></div><div><div class="ph ph-frame"><img src="../../assets/photos/photo-1763647756796-af9230245bf8.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1611143669185-af224c5e3252.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1785733690832-eabe6e6d5c84.jpg" alt="Sample food photo" loading="lazy"></div><p class="note small">Sample photos from Unsplash. Your own photos replace these.</p></div></div></section>
 <section class="blk" id="visit"><div class="wrap cols"><div><h2>Hours</h2><table><tr><td colspan="2">Your hours go here. I confirm them with you before launch.</td></tr></table></div>
-<div><h2>Visit</h2><p style="margin:0">8800 Southwest 72nd Street Miami</p><iframe title="Map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.3395807,25.699186599999997,-80.33158069999999,25.7041866&layer=mapnik&marker=25.7016866,-80.3355807"></iframe></div></div></section>
+<div><h2>Visit</h2><p style="margin:0">8800 Southwest 72nd Street Miami</p><iframe title="Map showing Shinju Japanese Buffet" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.3395807,25.699186599999997,-80.33158069999999,25.7041866&layer=mapnik&marker=25.7016866,-80.3355807"></iframe></div></div></section>
 </main>
 <footer><div class="wrap">Shinju Japanese Buffet · Concept preview by Giovanni Sanchez</div></footer>
+<nav class="actbar" aria-label="Quick actions"><a href="tel:+13052758801">Call</a><a href="https://www.google.com/maps/search/?api=1&query=Shinju Japanese Buffet 8800 Southwest 72nd Street Miami">Directions</a></nav>
+<script>
+(function(){
+var D=["Su","Mo","Tu","We","Th","Fr","Sa"],N=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+function days(t){var o=[];t.split(",").forEach(function(p){var r=p.split("-"),a=D.indexOf(r[0]),b=D.indexOf(r[1]||r[0]);if(a<0||b<0)return;for(var i=a;;i=(i+1)%7){o.push(i);if(i===b)break;}});return o;}
+function parse(h){var w=[[],[],[],[],[],[],[]];h.split(";").forEach(function(r){r=r.trim();var m=r.match(/^([A-Za-z,\-]+)\s+(.+)$/);if(!m||m[2]==="off")return;
+days(m[1]).forEach(function(d){m[2].split(",").forEach(function(t){var x=t.match(/(\d+):(\d+)-(\d+):(\d+)/);if(!x)return;var s=+x[1]*60+ +x[2],e=+x[3]*60+ +x[4];if(e<=s)e+=1440;w[d].push([s,e]);});});});return w;}
+function fmt(m){m%=1440;var h=Math.floor(m/60),mi=m%60,ap=h<12?"AM":"PM";h=h%12||12;return h+(mi?":"+("0"+mi).slice(-2):"")+" "+ap;}
+document.querySelectorAll(".opennow").forEach(function(el){try{
+var w=parse(el.getAttribute("data-hours")),f=new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date()),g={};
+f.forEach(function(p){g[p.type]=p.value;});var d=N.indexOf(g.weekday),now=(+g.hour%24)*60+ +g.minute,open=null;
+w[d].forEach(function(r){if(now>=r[0]&&now<r[1])open=r;});w[(d+6)%7].forEach(function(r){if(r[1]>1440&&now<r[1]-1440)open=[0,r[1]-1440];});
+if(open){el.textContent="Open now · until "+fmt(open[1]);el.className="opennow open";}
+else{var nx="";for(var k=0;k<8&&!nx;k++){var dd=(d+k)%7;w[dd].slice().sort(function(a,b){return a[0]-b[0];}).forEach(function(r){if(!nx&&(k>0||r[0]>now))nx=(k===0?"today":k===1?"tomorrow":N[dd])+" at "+fmt(r[0]);});}
+el.textContent="Closed now"+(nx?" · opens "+nx:"");}
+el.hidden=false;}catch(x){}});
+})();
+</script>
 </body></html>
