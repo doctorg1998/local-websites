@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Lamb and chicken gyros in West Kendall. 12750 SW 128th St, Miami, FL 33186">
+<title>Gyros 305 — concept preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F5F7;--surf:#FFFFFF;--text:#14202B;--muted:#52606D;--acc:#0F2A44;--acc-t:#FFFFFF;
+--acc2:#B8893B;--hero-bg:#0F2A44;--hero-text:#F2F5F7;--line:rgba(15,42,68,.14);--r:4px;
+--display:"DM Serif Display",Georgia,serif;--body:"Source Sans 3",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 var(--body)}
+a{color:inherit}a:focus-visible,.btn:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
+.preview{background:#111;color:#f4f4f4;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+header{background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:62px}
+.logo{font:700 21px var(--display);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+nav{display:flex;gap:20px;font-size:15px;font-weight:600}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--text)}
+h1,h2,h3{font-family:var(--display);line-height:1.04;margin:0;text-wrap:balance}
+h1{font-size:clamp(40px,8vw,74px);margin:12px 0 16px}h2{font-size:clamp(28px,4.4vw,40px);margin-bottom:20px}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.hero{background:var(--hero-bg);color:var(--hero-text);padding-block:clamp(48px,9vw,96px)}
+.hero.center{text-align:center}.hero.center .btns{justify-content:center}.hero.center .lead{margin-inline:auto}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+.lead{font-size:clamp(18px,2.4vw,21px);opacity:.88;max-width:34em;margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:var(--r);font-weight:700;text-decoration:none;border:1.5px solid transparent}
+.btn.primary{background:var(--acc);color:var(--acc-t)}
+.btn.ghost{border-color:currentColor;opacity:.92}
+.facts{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;margin:0 auto;padding-block:36px}
+.facts li{padding:16px 18px;font-weight:600}
+section.blk{padding-block:clamp(44px,7vw,72px);border-top:1px solid var(--line)}
+.note{color:var(--muted);margin:0 0 14px}
+.m-leaders,.m-board,.m-cards,.m-pills{list-style:none;padding:0;margin:0 0 18px}
+.m-leaders li{display:flex;align-items:baseline;gap:10px;padding:10px 0;font-size:19px}
+.m-leaders i{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.m-leaders em,.m-board em{font-style:normal;color:var(--muted)}
+.m-board{background:#1E1E1E;color:#F5F0E6;padding:22px 24px;border-radius:10px;border:8px solid #6B4423;font:400 22px/1.5 var(--display);letter-spacing:.03em}
+.m-board li{display:flex;gap:10px;align-items:baseline;text-transform:uppercase}.m-board i{flex:1;border-bottom:2px dashed rgba(245,240,230,.35)}.m-board em{color:#F4C430}
+.m-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px}
+.m-cards li{background:var(--surf);border:1px solid var(--line);padding:22px;font:700 22px var(--display)}
+.m-pills{display:flex;flex-wrap:wrap;gap:10px}.m-pills li{background:var(--surf);border:2px solid var(--acc);color:var(--acc);border-radius:999px;padding:10px 18px;font-weight:700}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.ph{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ph > *{aspect-ratio:3/4;display:grid;place-items:center;font-size:13px;color:var(--muted);background:var(--surf);border:1px dashed var(--line);width:100%;object-fit:cover}
+.ph > img{border:0;display:block;height:auto}.note.small{font-size:12px;margin-top:10px}
+.motif.photo{position:relative}.motif.photo img{width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit}
+.tag{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.6);color:#fff;font:600 11px/1 system-ui,sans-serif;padding:5px 8px;border-radius:4px;letter-spacing:.04em}
+.herophoto{position:relative;margin-top:36px}.herophoto img{width:100%;aspect-ratio:21/9;object-fit:cover;display:block;border:3px solid #1B1B1B;border-radius:10px;box-shadow:6px 6px 0 #1B1B1B}
+.herophoto .tag{left:calc(max(18px,env(safe-area-inset-left,0px)) + 12px);bottom:12px}
+.ph-arch > *{border-radius:999px 999px 12px 12px}.ph-round > *{border-radius:50%;aspect-ratio:1}.ph-blob > *{border-radius:40% 60% 55% 45%/50% 45% 55% 50%;aspect-ratio:1}
+.ph-frame > *{outline:1px solid var(--line);outline-offset:6px}.ph-square > *{aspect-ratio:1}
+.extra{margin-top:24px;padding:18px 20px;background:var(--surf);border:1px solid var(--line)}.extra h3{font-size:22px;margin-bottom:6px}.extra p{margin:0;color:var(--muted)}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line)}th{width:44%}
+iframe{width:100%;height:280px;border:0;margin-top:16px;border-radius:min(var(--r),16px)}
+footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){nav{display:none}.hgrid,.cols{grid-template-columns:minmax(0,1fr)}.hero .motif{max-width:240px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.hero{background:radial-gradient(circle at 20% 120%,rgba(184,137,59,.18) 0 30%,transparent 31%),var(--hero-bg)}
+.hero h1{letter-spacing:.01em}
+.hero .eyebrow{color:var(--acc2)}
+.wave{display:block;width:100%;height:48px;color:var(--bg)}
+.facts li{border-top:2px solid var(--acc2)}
+.btn{border-radius:2px;text-transform:uppercase;letter-spacing:.08em;font-size:14px}
+.btn.primary{background:var(--acc2);color:#1B1206}
+.hero .btn.ghost{color:var(--hero-text);border-color:rgba(242,245,247,.45)}
+
+</style></head><body>
+<div class="preview">Concept preview made by Giovanni Sanchez — not the official website of Gyros 305.</div>
+<header><div class="wrap"><a class="logo" href="#">Gyros 305</a>
+<nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav></div></header>
+<main>
+<section class="hero center" style="background:linear-gradient(rgba(15,42,68,.70),rgba(15,42,68,.70)),url(../../assets/photos/photo-1773620494884-940e0db95e46.jpg) center/cover no-repeat"><div class="wrap"><div class="inner"><div class="eyebrow">Greek food truck</div><h1>Gyros 305</h1><p class="lead">Lamb and chicken gyros in West Kendall.</p><div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Gyros 305 12750 SW 128th St, Miami, FL 33186">Get directions</a></div></div></div></section><svg class="wave" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 30 C200 0 400 60 600 30 S1000 0 1200 30 V48 H0Z"/></svg>
+<ul class="facts wrap"><li>Lamb and chicken gyros</li><li>Outdoor seating</li><li>Known for keeping its hours</li></ul>
+<section class="blk" id="menu"><div class="wrap"><h2>Menu</h2><p class="note">Customer favorites, from public reviews and articles:</p><ul class="m-leaders"><li><span>Lamb gyro</span><i></i><em>$ —</em></li><li><span>Chicken gyro</span><i></i><em>$ —</em></li><li><span>Fries</span><i></i><em>$ —</em></li></ul><p class="note">Full menu with prices goes here. Send a photo of your menu and it is added, and updating it later takes one text message.</p></div></section>
+<section class="blk" id="about"><div class="wrap cols"><div><h2>About</h2><p>Gyros 305 is a gyro truck on SW 128th Street with outdoor seating that gets busy on weekend evenings. Reviewers praise the lamb and chicken gyros and say the truck keeps to its posted hours.</p></div><div><div class="ph ph-frame"><img src="../../assets/photos/photo-1734974121561-11aee7d3cebd.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1752095809096-f09d22c466c5.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1638865326802-e5ca82e037f3.jpg" alt="Sample food photo" loading="lazy"></div><p class="note small">Sample photos from Unsplash. Your own photos replace these.</p></div></div></section>
+<section class="blk" id="visit"><div class="wrap cols"><div><h2>Hours</h2><table><tr><td colspan="2">Your hours go here. I confirm them with you before launch.</td></tr></table></div>
+<div><h2>Visit</h2><p style="margin:0">12750 SW 128th St, Miami, FL 33186</p><iframe title="Map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.4044392,25.645843799999998,-80.39643919999999,25.6508438&layer=mapnik&marker=25.6483438,-80.4004392"></iframe></div></div></section>
+</main>
+<footer><div class="wrap">Gyros 305 · Concept preview by Giovanni Sanchez</div></footer>
+</body></html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Mexican street tacos in West Kendall. 14955 SW 88th St, Miami, FL">
+<title>Tacos Arriba Juarez — concept preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3FBF2;--surf:#FFFFFF;--text:#10301E;--muted:#4D6B58;--acc:#1F8A4C;--acc-t:#FFFFFF;
+--acc2:#FFB238;--hero-bg:#F3FBF2;--hero-text:#10301E;--line:rgba(16,48,30,.13);--r:22px;
+--display:"Fredoka",system-ui,sans-serif;--body:"Nunito Sans",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 var(--body)}
+a{color:inherit}a:focus-visible,.btn:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
+.preview{background:#111;color:#f4f4f4;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+header{background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:62px}
+.logo{font:700 21px var(--display);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+nav{display:flex;gap:20px;font-size:15px;font-weight:600}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--text)}
+h1,h2,h3{font-family:var(--display);line-height:1.04;margin:0;text-wrap:balance}
+h1{font-size:clamp(40px,8vw,74px);margin:12px 0 16px}h2{font-size:clamp(28px,4.4vw,40px);margin-bottom:20px}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.hero{background:var(--hero-bg);color:var(--hero-text);padding-block:clamp(48px,9vw,96px)}
+.hero.center{text-align:center}.hero.center .btns{justify-content:center}.hero.center .lead{margin-inline:auto}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+.lead{font-size:clamp(18px,2.4vw,21px);opacity:.88;max-width:34em;margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:var(--r);font-weight:700;text-decoration:none;border:1.5px solid transparent}
+.btn.primary{background:var(--acc);color:var(--acc-t)}
+.btn.ghost{border-color:currentColor;opacity:.92}
+.facts{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;margin:0 auto;padding-block:36px}
+.facts li{padding:16px 18px;font-weight:600}
+section.blk{padding-block:clamp(44px,7vw,72px);border-top:1px solid var(--line)}
+.note{color:var(--muted);margin:0 0 14px}
+.m-leaders,.m-board,.m-cards,.m-pills{list-style:none;padding:0;margin:0 0 18px}
+.m-leaders li{display:flex;align-items:baseline;gap:10px;padding:10px 0;font-size:19px}
+.m-leaders i{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.m-leaders em,.m-board em{font-style:normal;color:var(--muted)}
+.m-board{background:#1E1E1E;color:#F5F0E6;padding:22px 24px;border-radius:10px;border:8px solid #6B4423;font:400 22px/1.5 var(--display);letter-spacing:.03em}
+.m-board li{display:flex;gap:10px;align-items:baseline;text-transform:uppercase}.m-board i{flex:1;border-bottom:2px dashed rgba(245,240,230,.35)}.m-board em{color:#F4C430}
+.m-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px}
+.m-cards li{background:var(--surf);border:1px solid var(--line);padding:22px;font:700 22px var(--display)}
+.m-pills{display:flex;flex-wrap:wrap;gap:10px}.m-pills li{background:var(--surf);border:2px solid var(--acc);color:var(--acc);border-radius:999px;padding:10px 18px;font-weight:700}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.ph{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ph > *{aspect-ratio:3/4;display:grid;place-items:center;font-size:13px;color:var(--muted);background:var(--surf);border:1px dashed var(--line);width:100%;object-fit:cover}
+.ph > img{border:0;display:block;height:auto}.note.small{font-size:12px;margin-top:10px}
+.motif.photo{position:relative}.motif.photo img{width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit}
+.tag{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.6);color:#fff;font:600 11px/1 system-ui,sans-serif;padding:5px 8px;border-radius:4px;letter-spacing:.04em}
+.herophoto{position:relative;margin-top:36px}.herophoto img{width:100%;aspect-ratio:21/9;object-fit:cover;display:block;border:3px solid #1B1B1B;border-radius:10px;box-shadow:6px 6px 0 #1B1B1B}
+.herophoto .tag{left:calc(max(18px,env(safe-area-inset-left,0px)) + 12px);bottom:12px}
+.ph-arch > *{border-radius:999px 999px 12px 12px}.ph-round > *{border-radius:50%;aspect-ratio:1}.ph-blob > *{border-radius:40% 60% 55% 45%/50% 45% 55% 50%;aspect-ratio:1}
+.ph-frame > *{outline:1px solid var(--line);outline-offset:6px}.ph-square > *{aspect-ratio:1}
+.extra{margin-top:24px;padding:18px 20px;background:var(--surf);border:1px solid var(--line)}.extra h3{font-size:22px;margin-bottom:6px}.extra p{margin:0;color:var(--muted)}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line)}th{width:44%}
+iframe{width:100%;height:280px;border:0;margin-top:16px;border-radius:min(var(--r),16px)}
+footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){nav{display:none}.hgrid,.cols{grid-template-columns:minmax(0,1fr)}.hero .motif{max-width:240px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.hero .motif{position:relative;aspect-ratio:1;max-width:340px;width:100%;margin-inline:auto}
+.hero .motif i{position:absolute;border-radius:50%;display:block}
+.hero .motif i:nth-child(1){inset:8% 22% 30% 8%;background:#B5E655}
+.hero .motif i:nth-child(2){inset:38% 6% 6% 40%;background:var(--acc2)}
+.hero .motif i:nth-child(3){inset:52% 52% 10% 14%;background:#7B2D8E}
+.hero h1{font-weight:700}
+.btn{border-radius:999px}
+.btn.primary{background:var(--acc);color:#fff}
+.facts li{background:var(--surf);border-radius:22px;box-shadow:0 6px 20px rgba(16,48,30,.08)}
+.hero .motif.photo img{position:absolute;inset:14%;width:72%;height:72%;border-radius:42% 58% 50% 50%/52% 44% 56% 48%;box-shadow:0 18px 40px rgba(16,48,30,.25)}
+.hero .motif.photo .tag{left:18%;bottom:18%}
+
+</style></head><body>
+<div class="preview">Concept preview made by Giovanni Sanchez — not the official website of Tacos Arriba Juarez.</div>
+<header><div class="wrap"><a class="logo" href="#">Tacos Arriba Juarez</a>
+<nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav></div></header>
+<main>
+<section class="hero split"><div class="wrap hgrid"><div><div class="eyebrow">Mexican food truck</div><h1>Tacos Arriba Juarez</h1><p class="lead">Mexican street tacos in West Kendall.</p><div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Tacos Arriba Juarez 14955 SW 88th St, Miami, FL">Get directions</a></div></div><div class="motif photo"><i></i><i></i><i></i><img src="../../assets/photos/photo-1683062332605-4e1209d75346.jpg" alt="Sample food photo"><span class="tag">Sample photo</span></div></div></section>
+<ul class="facts wrap"><li>Street tacos, $3.50 each</li><li>Free chips and salsa</li><li>Carne asada and al pastor</li></ul>
+<section class="blk" id="menu"><div class="wrap"><h2>Menu</h2><p class="note">Customer favorites, from public reviews and articles:</p><ul class="m-pills"><li>Carne asada tacos</li><li>Al pastor tacos</li><li>Quesadillas</li></ul><p class="note">Full menu with prices goes here. Send a photo of your menu and it is added, and updating it later takes one text message.</p></div></section>
+<section class="blk" id="about"><div class="wrap cols"><div><h2>About</h2><p>Tacos Arriba Juarez is a Mexican taco truck in a church parking lot on SW 88th Street in West Kendall. Regulars mention the carne asada, al pastor and quesadillas, and the free chips with salsa.</p></div><div><div class="ph ph-blob"><img src="../../assets/photos/photo-1648437595587-e6a8b0cdf1f9.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1768716575089-7ba787da9afb.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1788601988443-9b859ba3fdf4.jpg" alt="Sample food photo" loading="lazy"></div><p class="note small">Sample photos from Unsplash. Your own photos replace these.</p></div></div></section>
+<section class="blk" id="visit"><div class="wrap cols"><div><h2>Hours</h2><table><tr><td colspan="2">Your hours go here. I confirm them with you before launch.</td></tr></table></div>
+<div><h2>Visit</h2><p style="margin:0">14955 SW 88th St, Miami, FL</p><iframe title="Map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.43967980000001,25.6828681,-80.4316798,25.687868100000003&layer=mapnik&marker=25.6853681,-80.4356798"></iframe></div></div></section>
+</main>
+<footer><div class="wrap">Tacos Arriba Juarez · Concept preview by Giovanni Sanchez</div></footer>
+</body></html>
