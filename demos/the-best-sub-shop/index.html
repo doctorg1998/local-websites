@@ -44,9 +44,14 @@ section.blk{padding-block:clamp(44px,7vw,72px);border-top:1px solid var(--line)}
 .m-pills{display:flex;flex-wrap:wrap;gap:10px}.m-pills li{background:var(--surf);border:2px solid var(--acc);color:var(--acc);border-radius:999px;padding:10px 18px;font-weight:700}
 .cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
 .ph{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.ph div{aspect-ratio:3/4;display:grid;place-items:center;font-size:13px;color:var(--muted);background:var(--surf);border:1px dashed var(--line)}
-.ph-arch div{border-radius:999px 999px 12px 12px}.ph-round div{border-radius:50%;aspect-ratio:1}.ph-blob div{border-radius:40% 60% 55% 45%/50% 45% 55% 50%;aspect-ratio:1}
-.ph-frame div{outline:1px solid var(--line);outline-offset:6px}.ph-square div{aspect-ratio:1}
+.ph > *{aspect-ratio:3/4;display:grid;place-items:center;font-size:13px;color:var(--muted);background:var(--surf);border:1px dashed var(--line);width:100%;object-fit:cover}
+.ph > img{border:0;display:block;height:auto}.note.small{font-size:12px;margin-top:10px}
+.motif.photo{position:relative}.motif.photo img{width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit}
+.tag{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.6);color:#fff;font:600 11px/1 system-ui,sans-serif;padding:5px 8px;border-radius:4px;letter-spacing:.04em}
+.herophoto{position:relative;margin-top:36px}.herophoto img{width:100%;aspect-ratio:21/9;object-fit:cover;display:block;border:3px solid #1B1B1B;border-radius:10px;box-shadow:6px 6px 0 #1B1B1B}
+.herophoto .tag{left:calc(max(18px,env(safe-area-inset-left,0px)) + 12px);bottom:12px}
+.ph-arch > *{border-radius:999px 999px 12px 12px}.ph-round > *{border-radius:50%;aspect-ratio:1}.ph-blob > *{border-radius:40% 60% 55% 45%/50% 45% 55% 50%;aspect-ratio:1}
+.ph-frame > *{outline:1px solid var(--line);outline-offset:6px}.ph-square > *{aspect-ratio:1}
 .extra{margin-top:24px;padding:18px 20px;background:var(--surf);border:1px solid var(--line)}.extra h3{font-size:22px;margin-bottom:6px}.extra p{margin:0;color:var(--muted)}
 table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line)}th{width:44%}
 iframe{width:100%;height:280px;border:0;margin-top:16px;border-radius:min(var(--r),16px)}
@@ -67,10 +72,10 @@ h2{text-transform:uppercase;font-weight:400;letter-spacing:.02em}
 <header><div class="wrap"><a class="logo" href="#">The Best Sub Shop</a>
 <nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav></div></header>
 <main>
-<section class="hero center"><div class="wrap"><div class="inner"><div class="eyebrow">Sub shop</div><h1>The Best Sub Shop</h1><p class="lead">Hot and cold subs made to order in Kendall.</p><div class="btns"><a class="btn primary" href="tel:+13052790000">Call +1 305-279-0000</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=The Best Sub Shop 9802 Southwest 77th Avenue Miami">Get directions</a></div></div></div></section>
+<section class="hero center"><div class="wrap"><div class="inner"><div class="eyebrow">Sub shop</div><h1>The Best Sub Shop</h1><p class="lead">Hot and cold subs made to order in Kendall.</p><div class="btns"><a class="btn primary" href="tel:+13052790000">Call +1 305-279-0000</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=The Best Sub Shop 9802 Southwest 77th Avenue Miami">Get directions</a></div></div></div><div class="wrap herophoto"><img src="https://images.unsplash.com/photo-1676300187140-00828e014d2a?w=1400&q=70&auto=format&fit=crop" alt="Sample food photo"><span class="tag">Sample photo</span></div></section>
 <ul class="facts wrap"><li>Subs made to order</li><li>Known for the Philly cheesesteak</li><li>Order ahead by phone</li></ul>
 <section class="blk" id="menu"><div class="wrap"><h2>Menu</h2><p class="note">Customer favorites, from public reviews and articles:</p><ul class="m-board"><li><span>Philly cheesesteak</span><i></i><em>$ —</em></li><li><span>Honey mustard chicken sub</span><i></i><em>$ —</em></li></ul><p class="note">Full menu with prices goes here. Send a photo of your menu and it is added, and updating it later takes one text message.</p></div></section>
-<section class="blk" id="about"><div class="wrap cols"><div><h2>About</h2><p>The Best Sub Shop is a neighborhood sub shop on SW 77th Avenue. Regulars come back for the Philly cheesesteak and the honey mustard chicken sub.</p></div><div class="ph ph-round"><div>Your photo</div><div>Your photo</div><div>Your photo</div></div></div></section>
+<section class="blk" id="about"><div class="wrap cols"><div><h2>About</h2><p>The Best Sub Shop is a neighborhood sub shop on SW 77th Avenue. Regulars come back for the Philly cheesesteak and the honey mustard chicken sub.</p></div><div><div class="ph ph-round"><img src="https://images.unsplash.com/photo-1778362561139-84fc85c97fe0?w=700&q=70&auto=format&fit=crop" alt="Sample food photo" loading="lazy"><img src="https://images.unsplash.com/photo-1554433607-66b5efe9d304?w=700&q=70&auto=format&fit=crop" alt="Sample food photo" loading="lazy"><img src="https://images.unsplash.com/photo-1699728088600-6d684acbeada?w=700&q=70&auto=format&fit=crop" alt="Sample food photo" loading="lazy"></div><p class="note small">Sample photos from Unsplash. Your own photos replace these.</p></div></div></section>
 <section class="blk" id="visit"><div class="wrap cols"><div><h2>Hours</h2><table><tr><td colspan="2">Your hours go here. I confirm them with you before launch.</td></tr></table></div>
 <div><h2>Visit</h2><p style="margin:0">9802 Southwest 77th Avenue Miami</p><iframe title="Map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.3225833,25.676807399999998,-80.3145833,25.6818074&layer=mapnik&marker=25.6793074,-80.3185833"></iframe></div></div></section>
 </main>
