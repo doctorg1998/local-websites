@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Celebration cakes, pastelitos and coffee, baked every morning. Kendall, Miami, FL">
+<title>Dulce Rosa Bakery — sample site</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600;1,700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF4F2;--surf:#FFFFFF;--text:#4A2E2A;--muted:#7D6460;--acc:#4A2E2A;--acc-t:#FBF4F2;
+--acc2:#C9787F;--hero-bg:#FBF4F2;--hero-text:#4A2E2A;--line:rgba(74,46,42,.15);--r:999px;
+--display:"Cormorant Garamond",Garamond,serif;--body:"Karla",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 var(--body)}
+a{color:inherit}a:focus-visible,.btn:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
+.preview{background:#111;color:#f4f4f4;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+header{background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:62px}
+.logo{font:700 21px var(--display);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+nav{display:flex;gap:20px;font-size:15px;font-weight:600}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--text)}
+h1,h2,h3{font-family:var(--display);line-height:1.04;margin:0;text-wrap:balance}
+h1{font-size:clamp(40px,8vw,74px);margin:12px 0 16px}h2{font-size:clamp(28px,4.4vw,40px);margin-bottom:20px}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.hero{background:var(--hero-bg);color:var(--hero-text);padding-block:clamp(48px,9vw,96px)}
+.hero.center{text-align:center}.hero.center .btns{justify-content:center}.hero.center .lead{margin-inline:auto}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+.lead{font-size:clamp(18px,2.4vw,21px);opacity:.88;max-width:34em;margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:var(--r);font-weight:700;text-decoration:none;border:1.5px solid transparent}
+.btn.primary{background:var(--acc);color:var(--acc-t)}
+.btn.ghost{border-color:currentColor;opacity:.92}
+.facts{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;margin:0 auto;padding-block:36px}
+.facts li{padding:16px 18px;font-weight:600}
+section.blk{padding-block:clamp(44px,7vw,72px);border-top:1px solid var(--line)}
+.note{color:var(--muted);margin:0 0 14px}
+.m-leaders,.m-board,.m-cards,.m-pills{list-style:none;padding:0;margin:0 0 18px}
+.m-leaders li{display:flex;align-items:baseline;gap:10px;padding:10px 0;font-size:19px}
+.m-leaders i{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.m-leaders em,.m-board em{font-style:normal;color:var(--muted)}
+.m-board{background:#1E1E1E;color:#F5F0E6;padding:22px 24px;border-radius:10px;border:8px solid #6B4423;font:400 22px/1.5 var(--display);letter-spacing:.03em}
+.m-board li{display:flex;gap:10px;align-items:baseline;text-transform:uppercase}.m-board i{flex:1;border-bottom:2px dashed rgba(245,240,230,.35)}.m-board em{color:#F4C430}
+.m-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px}
+.m-cards li{background:var(--surf);border:1px solid var(--line);padding:22px;font:700 22px var(--display)}
+.m-pills{display:flex;flex-wrap:wrap;gap:10px}.m-pills li{background:var(--surf);border:2px solid var(--acc);color:var(--acc);border-radius:999px;padding:10px 18px;font-weight:700}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.ph{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ph > *{aspect-ratio:3/4;display:grid;place-items:center;font-size:13px;color:var(--muted);background:var(--surf);border:1px dashed var(--line);width:100%;object-fit:cover}
+.ph > img{border:0;display:block;height:auto}.note.small{font-size:12px;margin-top:10px}
+.motif.photo{position:relative}.motif.photo img{width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit}
+.tag{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.6);color:#fff;font:600 11px/1 system-ui,sans-serif;padding:5px 8px;border-radius:4px;letter-spacing:.04em}
+.herophoto{position:relative;margin-top:36px}.herophoto img{width:100%;aspect-ratio:21/9;object-fit:cover;display:block;border:3px solid #1B1B1B;border-radius:10px;box-shadow:6px 6px 0 #1B1B1B}
+.herophoto .tag{left:calc(max(18px,env(safe-area-inset-left,0px)) + 12px);bottom:12px}
+.ph-arch > *{border-radius:999px 999px 12px 12px}.ph-round > *{border-radius:50%;aspect-ratio:1}.ph-blob > *{border-radius:40% 60% 55% 45%/50% 45% 55% 50%;aspect-ratio:1}
+.ph-frame > *{outline:1px solid var(--line);outline-offset:6px}.ph-square > *{aspect-ratio:1}
+.extra{margin-top:24px;padding:18px 20px;background:var(--surf);border:1px solid var(--line)}.extra h3{font-size:22px;margin-bottom:6px}.extra p{margin:0;color:var(--muted)}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line)}th{width:44%}
+iframe{width:100%;height:280px;border:0;margin-top:16px;border-radius:min(var(--r),16px)}
+footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){nav{display:none}.hgrid,.cols{grid-template-columns:minmax(0,1fr)}.hero .motif{max-width:240px}}
+.skip{position:absolute;left:-999px;top:8px;background:var(--acc);color:var(--acc-t);padding:10px 14px;z-index:20;border-radius:6px}.skip:focus{left:12px}
+.opennow{display:inline-block;margin:16px 0 0;padding:6px 12px;border-radius:999px;font:700 14px/1.2 var(--body);background:rgba(0,0,0,.55);color:#fff}
+.opennow.open::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:#3DDC84;margin-right:8px}
+.actbar{display:none}
+@media (max-width:760px){body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+.actbar{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--acc);
+padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+.actbar a{color:var(--acc-t);text-align:center;font-weight:700;text-decoration:none;min-height:56px;display:grid;place-items:center;border-left:1px solid rgba(255,255,255,.18)}
+.actbar a:first-child{border-left:0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.hero h1{font-style:italic;font-weight:700;font-size:clamp(44px,8vw,80px)}
+.hero .motif{aspect-ratio:3/4;max-width:300px;width:100%;margin-inline:auto;border-radius:999px 999px 18px 18px;
+ background:radial-gradient(circle at 50% 38%,#F3D5D3 0 22%,transparent 23%),linear-gradient(180deg,#F7E3E0,#EBC3C0);border:1px solid var(--line);
+ display:grid;place-items:end center;padding-bottom:22px}
+.hero .motif::after{content:attr(data-label);font:italic 600 18px var(--display);color:var(--muted)}
+h2{font-style:italic;font-weight:700;font-size:clamp(32px,5vw,44px)}
+.eyebrow{color:var(--acc2);letter-spacing:.24em}
+.btn{border-radius:999px}
+.btn.primary{background:var(--acc2);color:#fff}
+.facts li{text-align:center;border-bottom:1px solid var(--acc2)}
+
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview">Sample website for a made-up business, by Giovanni Sanchez. Yours uses your real menu, photos and colors. <a href='../../index.html#looks' style='color:inherit;font-weight:700'>See all examples</a></div>
+<header><div class="wrap"><a class="logo" href="#">Dulce Rosa Bakery</a>
+<nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav></div></header>
+<main id="main">
+<section class="hero split"><div class="wrap hgrid"><div><div class="eyebrow">Bakery</div><h1>Dulce Rosa Bakery</h1><p class="lead">Celebration cakes, pastelitos and coffee, baked every morning.</p><p class="opennow" data-hours="Tu-Sa 07:00-19:00; Su 08:00-14:00" hidden></p><div class="btns"><a class="btn primary" href="tel:3055550100">Call (305) 555-0100</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Dulce Rosa Bakery Kendall, Miami, FL">Get directions</a></div></div><div class="motif photo"><img src="../../assets/photos/photo-1761637604365-d57cb1ab6f67.jpg" alt="Sample food photo"><span class="tag">Sample photo</span></div></div></section>
+<ul class="facts wrap"><li>Custom cakes with 3 days&#x27; notice</li><li>Baked fresh daily</li><li>Se habla español</li></ul>
+<section class="blk" id="menu"><div class="wrap"><h2>Menu</h2><ul class="m-cards"><li>Pastelito de guayaba <em>$2</em></li><li>Tres leches slice <em>$6</em></li><li>Café con leche <em>$4</em></li><li>Custom cake <em>from $45</em></li></ul></div></section>
+<section class="blk" id="about"><div class="wrap cols"><div><h2>About</h2><p>A made-up neighborhood bakery: birthday cakes to order, guava pastelitos warm by 7 AM, and café con leche to go.</p></div><div><div class="ph ph-arch"><img src="../../assets/photos/photo-1634324040880-63dbf9a4e5ac.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1702744754798-4a1d980b03e2.jpg" alt="Sample food photo" loading="lazy"><img src="../../assets/photos/photo-1761712826051-b873907fb5d3.jpg" alt="Sample food photo" loading="lazy"></div><p class="note small">Sample photos from Unsplash. Your own photos replace these.</p></div></div></section>
+<section class="blk" id="visit"><div class="wrap cols"><div><h2>Hours</h2><table><tr><th>Tue–Sat</th><td>7 AM – 7 PM</td></tr><tr><th>Sun</th><td>8 AM – 2 PM</td></tr></table></div>
+<div><h2>Visit</h2><p style="margin:0">Kendall, Miami, FL</p><iframe title="Map showing Dulce Rosa Bakery" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.3172,25.687199999999997,-80.30919999999999,25.6922&layer=mapnik&marker=25.6897,-80.3132"></iframe></div></div></section>
+</main>
+<footer><div class="wrap">Dulce Rosa Bakery · Sample site by Giovanni Sanchez</div></footer>
+<nav class="actbar" aria-label="Quick actions"><a href="tel:3055550100">Call</a><a href="https://www.google.com/maps/search/?api=1&query=Dulce Rosa Bakery Kendall, Miami, FL">Directions</a></nav>
+<script>
+(function(){
+var D=["Su","Mo","Tu","We","Th","Fr","Sa"],N=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+function days(t){var o=[];t.split(",").forEach(function(p){var r=p.split("-"),a=D.indexOf(r[0]),b=D.indexOf(r[1]||r[0]);if(a<0||b<0)return;for(var i=a;;i=(i+1)%7){o.push(i);if(i===b)break;}});return o;}
+function parse(h){var w=[[],[],[],[],[],[],[]];h.split(";").forEach(function(r){r=r.trim();var m=r.match(/^([A-Za-z,\-]+)\s+(.+)$/);if(!m||m[2]==="off")return;
+days(m[1]).forEach(function(d){m[2].split(",").forEach(function(t){var x=t.match(/(\d+):(\d+)-(\d+):(\d+)/);if(!x)return;var s=+x[1]*60+ +x[2],e=+x[3]*60+ +x[4];if(e<=s)e+=1440;w[d].push([s,e]);});});});return w;}
+function fmt(m){m%=1440;var h=Math.floor(m/60),mi=m%60,ap=h<12?"AM":"PM";h=h%12||12;return h+(mi?":"+("0"+mi).slice(-2):"")+" "+ap;}
+document.querySelectorAll(".opennow").forEach(function(el){try{
+var w=parse(el.getAttribute("data-hours")),f=new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date()),g={};
+f.forEach(function(p){g[p.type]=p.value;});var d=N.indexOf(g.weekday),now=(+g.hour%24)*60+ +g.minute,open=null;
+w[d].forEach(function(r){if(now>=r[0]&&now<r[1])open=r;});w[(d+6)%7].forEach(function(r){if(r[1]>1440&&now<r[1]-1440)open=[0,r[1]-1440];});
+if(open){el.textContent="Open now · until "+fmt(open[1]);el.className="opennow open";}
+else{var nx="";for(var k=0;k<8&&!nx;k++){var dd=(d+k)%7;w[dd].slice().sort(function(a,b){return a[0]-b[0];}).forEach(function(r){if(!nx&&(k>0||r[0]>now))nx=(k===0?"today":k===1?"tomorrow":N[dd])+" at "+fmt(r[0]);});}
+el.textContent="Closed now"+(nx?" · opens "+nx:"");}
+el.hidden=false;}catch(x){}});
+})();
+</script>
+</body></html>

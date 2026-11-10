@@ -12,12 +12,13 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 var(--body)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
-a{color:var(--acc)}a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--mango);outline-offset:2px}
+a{color:var(--acc)}a:focus-visible,.btn:focus-visible,.chip:focus-visible,summary:focus-visible{outline:3px solid var(--mango);outline-offset:2px}
 .wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
 .logo{font:700 19px var(--display);color:var(--text);text-decoration:none;letter-spacing:-.01em}
-nav{display:flex;gap:18px;font-size:15px;font-weight:500}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--acc)}
+nav{display:flex;gap:18px;font-size:15px;font-weight:500;align-items:center}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--acc)}
+nav a.lang{border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--text)}
 h1,h2,h3{font-family:var(--display);line-height:1.05;letter-spacing:-.02em;text-wrap:balance}
 h1{font-size:clamp(38px,7.5vw,68px);font-weight:800;margin:12px 0 18px}
 h2{font-size:clamp(26px,4vw,38px);font-weight:700;margin:0 0 18px}
@@ -27,7 +28,7 @@ h2{font-size:clamp(26px,4vw,38px);font-weight:700;margin:0 0 18px}
 .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
 .btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:10px;background:var(--acc);color:var(--acc-t);font:600 16px var(--body);text-decoration:none;border:0;cursor:pointer}
 .btn.ghost{background:transparent;color:var(--text);border:1.5px solid var(--muted)}
-section{padding-block:56px;border-top:1px solid var(--line)}
+section{padding-block:56px;border-top:1px solid var(--line);scroll-margin-top:calc(60px + env(safe-area-inset-top,0px))}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
 .card{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:22px}
 .card h3{margin:0 0 6px;font-size:20px}.card p{margin:0;color:var(--muted)}
@@ -38,9 +39,15 @@ ul.check li:before{content:"✓";position:absolute;left:4px;color:var(--mango);f
 ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
 ol.steps li{counter-increment:s;background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:16px 16px 16px 62px;position:relative}
 ol.steps li:before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:8px;background:var(--soft);color:var(--acc);display:grid;place-items:center;font:800 17px var(--display)}
-.sample{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
-.phone{border:10px solid var(--text);border-radius:34px;overflow:hidden;aspect-ratio:9/16;width:100%;max-width:300px;margin:0 auto;background:var(--surf)}
-.phone iframe{width:100%;height:100%;border:0}
+.sample{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:center}
+.phone{border:10px solid var(--text);border-radius:34px;overflow:hidden;aspect-ratio:9/17;width:100%;max-width:300px;margin:0 auto;background:var(--surf)}
+.phone iframe{width:100%;height:100%;border:0;display:block}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}
+.chip{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surf);color:var(--text);text-decoration:none;font:inherit;text-align:left;cursor:pointer;min-height:48px}
+.chip strong{font-weight:700;line-height:1.25}.chip span{color:var(--muted);font-size:14px;line-height:1.3}
+.chip[aria-pressed="true"]{border-color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc);background:var(--soft)}
+.chip i{font-style:normal;color:var(--mango);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.small{font-size:14px;color:var(--muted)}
 details{border-bottom:1px solid var(--line);padding-block:14px}summary{font-weight:600;cursor:pointer}details p{color:var(--muted);margin:10px 0 0}
 .founding{margin-top:16px;padding:14px 16px;border:1.5px dashed var(--mango);border-radius:12px}
 .contact{background:var(--soft);border-radius:18px;padding:28px}
@@ -50,10 +57,12 @@ footer a{color:var(--muted);margin-right:16px}
 .doc{max-width:760px;padding-block:40px 64px}.doc h1{font-size:clamp(30px,6vw,46px)}.doc h2{font-size:22px;margin-top:32px}
 .doc li{margin:6px 0}
 @media (max-width:720px){nav a.hide{display:none}.price,.sample{grid-template-columns:minmax(0,1fr)}.hero{padding-block:44px 36px}}
+@media (max-width:720px){.phone,#look-open-wrap{display:none}}
+@media (max-width:330px){.chips{grid-template-columns:minmax(0,1fr)}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style></head><body>
 <header><div class="wrap"><a class="logo" href="index.html">Giovanni Sanchez</a>
-<nav><a class="hide" href="index.html#how">How it works</a><a href="index.html#pricing">Pricing</a><a href="index.html#contact">Contact</a></nav></div></header>
+<nav><a class="hide" href="index.html#how">How it works</a><a class="hide" href="index.html#looks">Examples</a><a href="index.html#pricing">Pricing</a><a class="hide" href="index.html#contact">Contact</a><a class="lang" href="es.html" hreflang="es" lang="es">Español</a></nav></div></header>
 <main class="wrap doc"><h1>Refund &amp; Cancellation Policy</h1>
 <p><em>Giovanni Sanchez · last updated November 09, 2026. </em></p>
 
@@ -94,7 +103,13 @@ footer a{color:var(--muted);margin-right:16px}
 </main>
 <footer><div class="wrap"><p>Giovanni Sanchez · Websites for Kendall &amp; South Miami businesses · Miami-Dade, Florida</p>
 <p><a href="terms.html">Terms of Service</a><a href="refunds.html">Refunds &amp; cancellation</a><a href="privacy.html">Privacy</a></p></div></footer>
-<script>document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{
-const sel=()=>{const m=document.querySelector('.mail');if(m){const r=document.createRange();r.selectNodeContents(m);const g=getSelection();g.removeAllRanges();g.addRange(r);}b.textContent='Selected: press copy';};
-try{navigator.clipboard.writeText(b.dataset.copy).then(()=>{b.textContent='Copied';setTimeout(()=>{b.textContent='Copy email address';},2000);},sel);}catch(_){sel();}}));</script>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){var label=b.textContent;b.addEventListener('click',function(){
+var sel=function(){var m=document.querySelector('.mail');if(m){var r=document.createRange();r.selectNodeContents(m);var g=getSelection();g.removeAllRanges();g.addRange(r);}b.textContent=b.dataset.sel;};
+try{navigator.clipboard.writeText(b.dataset.copy).then(function(){b.textContent=b.dataset.done;setTimeout(function(){b.textContent=label;},2000);},sel);}catch(_){sel();}});});
+var frame=document.getElementById('look-frame'),open=document.getElementById('look-open');
+document.querySelectorAll('.chip[data-src]').forEach(function(c){c.addEventListener('click',function(ev){
+if(!frame||!frame.offsetParent)return;ev.preventDefault();frame.src=c.dataset.src;frame.title=c.dataset.title;if(open)open.href=c.dataset.src;
+document.querySelectorAll('.chip[data-src]').forEach(function(o){o.setAttribute('aria-pressed',o===c?'true':'false');});});});
+</script>
 </body></html>
