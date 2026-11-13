@@ -1,0 +1,107 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src 'self' https://www.openstreetmap.org; script-src 'sha256-4KSJYzp1E4RuzB2Laz3Yd4lU5OuwRHmEe2vKoHrXXm4=' 'sha256-aGvqUmUI9nQOo0WLQn5k2nKryL90yhqlnipBxyT0EGU='; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Claim your website · Giovanni Sanchez</title><meta name="description" content="Claim the website preview made for your business.">
+<meta property="og:title" content="Claim your website · Giovanni Sanchez"><meta property="og:description" content="Claim the website preview made for your business.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://doctorg1998.github.io/local-websites/claim.html"><link rel="canonical" href="https://doctorg1998.github.io/local-websites/claim.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+/* Layout: one calm column of sections; palm green does the work, mango only marks checks and numbers. */
+:root{--bg:#F5F6F1;--surf:#FFFFFF;--text:#14231C;--muted:#55635B;--acc:#0E6A4E;--acc-t:#FFFFFF;--mango:#C97A0C;
+--line:rgba(20,35,28,.13);--soft:#E7EEE7;--display:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;--body:"Figtree",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1813;--surf:#16211B;--text:#E9EFE9;--muted:#A5B3AA;--acc:#5CC79C;--acc-t:#0B1510;--mango:#F2B04A;--line:rgba(233,239,233,.14);--soft:#1C2A22;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1813;--surf:#16211B;--text:#E9EFE9;--muted:#A5B3AA;--acc:#5CC79C;--acc-t:#0B1510;--mango:#F2B04A;--line:rgba(233,239,233,.14);--soft:#1C2A22;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--acc)}a:focus-visible,.btn:focus-visible,.chip:focus-visible,summary:focus-visible{outline:3px solid var(--mango);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+.logo{font:700 19px var(--display);color:var(--text);text-decoration:none;letter-spacing:-.01em}
+nav{display:flex;gap:18px;font-size:15px;font-weight:500;align-items:center}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--acc)}
+nav a.lang{border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--text)}
+h1,h2,h3{font-family:var(--display);line-height:1.05;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(38px,7.5vw,68px);font-weight:800;margin:12px 0 18px}
+h2{font-size:clamp(26px,4vw,38px);font-weight:700;margin:0 0 18px}
+.eyebrow{color:var(--acc);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.lead{font-size:19px;color:var(--muted);max-width:36em}
+.hero{padding-block:64px 48px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:10px;background:var(--acc);color:var(--acc-t);font:600 16px var(--body);text-decoration:none;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--text);border:1.5px solid var(--muted)}
+section{padding-block:56px;border-top:1px solid var(--line);scroll-margin-top:calc(60px + env(safe-area-inset-top,0px))}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 6px;font-size:20px}.card p{margin:0;color:var(--muted)}
+.price{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:start}
+.big{font:800 clamp(44px,8vw,64px)/1 var(--display);font-variant-numeric:tabular-nums}.big small{font:500 18px var(--body);color:var(--muted)}
+ul.check{list-style:none;padding:0;margin:0}ul.check li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid var(--line)}
+ul.check li:before{content:"✓";position:absolute;left:4px;color:var(--mango);font-weight:800}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ol.steps li{counter-increment:s;background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:16px 16px 16px 62px;position:relative}
+ol.steps li:before{content:counter(s);position:absolute;left:16px;top:13px;width:32px;height:32px;border-radius:8px;background:var(--soft);color:var(--acc);display:grid;place-items:center;font:800 17px var(--display)}
+.sample{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:center}
+.phone{border:10px solid var(--text);border-radius:34px;overflow:hidden;aspect-ratio:9/17;width:100%;max-width:300px;margin:0 auto;background:var(--surf)}
+.phone iframe{width:100%;height:100%;border:0;display:block}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}
+.chip{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surf);color:var(--text);text-decoration:none;font:inherit;text-align:left;cursor:pointer;min-height:48px}
+.chip strong{font-weight:700;line-height:1.25}.chip span{color:var(--muted);font-size:14px;line-height:1.3}
+.chip[aria-pressed="true"]{border-color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc);background:var(--soft)}
+.chip i{font-style:normal;color:var(--mango);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.small{font-size:14px;color:var(--muted)}
+details{border-bottom:1px solid var(--line);padding-block:14px}summary{font-weight:600;cursor:pointer}details p{color:var(--muted);margin:10px 0 0}
+.founding{margin-top:16px;padding:14px 16px;border:1.5px dashed var(--mango);border-radius:12px}
+.contact{background:var(--soft);border-radius:18px;padding:28px}
+.mail{font-weight:700;font-size:clamp(16px,3.6vw,21px);word-break:break-all;user-select:all}
+footer{padding-block:32px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer a{color:var(--muted);margin-right:16px}
+.doc{max-width:760px;padding-block:40px 64px}.doc h1{font-size:clamp(30px,6vw,46px)}.doc h2{font-size:22px;margin-top:32px}
+.doc li{margin:6px 0}
+@media (max-width:720px){nav a.hide{display:none}.price,.sample{grid-template-columns:minmax(0,1fr)}.hero{padding-block:44px 36px}}
+@media (max-width:720px){.phone,#look-open-wrap{display:none}}
+@media (max-width:330px){.chips{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header><div class="wrap"><a class="logo" href="index.html">Giovanni Sanchez</a>
+<nav><a class="hide" href="index.html#how">How it works</a><a class="hide" href="index.html#looks">Examples</a><a href="index.html#pricing">Pricing</a><a class="hide" href="index.html#contact">Contact</a><a class="lang" href="es.html" hreflang="es" lang="es">Español</a></nav></div></header>
+<main class="wrap doc" style="max-width:920px">
+<div class="eyebrow">Your preview is ready</div>
+<h1>Claim your website</h1>
+<p class="lead">I built a preview for your business. If you like it, pick a plan and it becomes your real site on your own web address, usually within 3 business days of getting your menu or price list and photos.</p>
+<p><a class="btn ghost" id="claim-preview" href="index.html#looks" hidden>Open your preview again</a></p>
+<div class="grid" style="margin-top:8px">
+<div class="card"><h3>Founding client</h3><div class="big" style="font-size:44px">$79<small> /month</small></div><p style="margin:10px 0 0">For my first 10 clients: $79/month for your first 12 months, then $99. All I ask is permission to show your site as an example.</p><div class="btns" style="margin-top:14px"><p class="small" style="margin-top:14px">To start this plan, email me your business name. I reply with a secure payment link.</p></div></div>
+<div class="card"><h3>Website plan</h3><div class="big" style="font-size:44px">$99<small> /month</small></div><p style="margin:10px 0 0">Your own web address, hosting, and unlimited updates by text or email.</p><div class="btns" style="margin-top:14px"><p class="small" style="margin-top:14px">To start this plan, email me your business name. I reply with a secure payment link.</p></div></div>
+<div class="card"><h3>Bookings plan</h3><div class="big" style="font-size:44px">$149<small> /month</small></div><p style="margin:10px 0 0">Everything in the website plan, plus an instant quote calculator and deposits paid straight into your own Stripe account.</p><div class="btns" style="margin-top:14px"><p class="small" style="margin-top:14px">To start this plan, email me your business name. I reply with a secure payment link.</p></div></div>
+</div>
+<h2>What happens next</h2>
+<ol class="steps">
+<li><strong>No setup fee.</strong> Your first month is the only thing you pay today. Card details are entered on Stripe's secure page, never on this site.</li>
+<li><strong>I confirm you are the owner.</strong> Before anything goes live I contact the business by its public phone number or email. If I cannot confirm, you get a full refund.</li>
+<li><strong>You send your menu or prices and photos</strong>, look the site over and ask for changes.</li>
+<li><strong>30-day money-back guarantee</strong> after launch, and you can cancel anytime.</li>
+</ol>
+<p class="small" id="claim-refrow" hidden>Your reference: <strong id="claim-ref"></strong></p>
+<h2>Questions first?</h2>
+<p>Email me at:</p><p class="mail">giovannisanchez.website@gmail.com</p><button class="btn ghost" type="button" data-copy="giovannisanchez.website@gmail.com" data-done="Copied" data-sel="Selected: press copy">Copy email address</button>
+<p class="small" style="margin-top:22px">By starting a plan you agree to the <a href="terms.html">Terms of Service</a>, the <a href="refunds.html">refund &amp; cancellation policy</a> and the <a href="privacy.html">privacy policy</a>. Not your business? This preview was made as an example and is hidden from search engines. Email me and I take it down.</p>
+</main>
+<footer><div class="wrap"><p>Giovanni Sanchez · Websites for Kendall &amp; South Miami businesses · Miami-Dade, Florida</p>
+<p><a href="terms.html">Terms of Service</a><a href="refunds.html">Refunds &amp; cancellation</a><a href="privacy.html">Privacy</a></p></div></footer>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){var label=b.textContent;b.addEventListener('click',function(){
+var sel=function(){var m=document.querySelector('.mail');if(m){var r=document.createRange();r.selectNodeContents(m);var g=getSelection();g.removeAllRanges();g.addRange(r);}b.textContent=b.dataset.sel;};
+try{navigator.clipboard.writeText(b.dataset.copy).then(function(){b.textContent=b.dataset.done;setTimeout(function(){b.textContent=label;},2000);},sel);}catch(_){sel();}});});
+var frame=document.getElementById('look-frame'),open=document.getElementById('look-open');
+document.querySelectorAll('.chip[data-src]').forEach(function(c){c.addEventListener('click',function(ev){
+if(!frame||!frame.offsetParent)return;ev.preventDefault();frame.src=c.dataset.src;frame.title=c.dataset.title;if(open)open.href=c.dataset.src;
+document.querySelectorAll('.chip[data-src]').forEach(function(o){o.setAttribute('aria-pressed',o===c?'true':'false');});});});
+</script><script>
+(function(){var m=/[?&]b=([a-z0-9-]{1,50})(?:&|$)/.exec(location.search),s=m?m[1]:"";
+if(s){var p=document.getElementById("claim-preview");p.href="demos/"+s+"/";p.hidden=false;
+document.getElementById("claim-ref").textContent=s;document.getElementById("claim-refrow").hidden=false;}
+document.querySelectorAll("a[data-pay]").forEach(function(a){if(s)a.href=a.href+(a.href.indexOf("?")<0?"?":"&")+"client_reference_id="+s;});
+})();
+</script>
+</body></html>
